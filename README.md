@@ -12,6 +12,7 @@
 如果想要自己编译的话，把这个目录 clone 下来，打开 xcodeproj，自己研究吧。
 
 ## 用了哪些东西
-- SwiftyJSON
-- KeyChainAccess
-- SimplePing
+- SwiftyJSON https://github.com/SwiftyJSON/SwiftyJSON
+- KeyChainAccess https://github.com/kishikawakatsumi/KeychainAccess
+- SimplePing https://developer.apple.com/library/content/samplecode/SimplePing/Introduction/Intro.html
+- PlainPing https://github.com/naptics/PlainPing
