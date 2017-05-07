@@ -1,0 +1,40 @@
+/* 
+  Localizable.string.strings
+  WhyFi
+
+  Created by 崔振宇 on 2017. 4. 29..
+  Copyright © 2017년 Tom. All rights reserved.
+*/
+"wrongWiFi" = "不正なWi-Fiネットワーク";
+"noWifiConnect" = "Wi-Fiネットワーク接続していない";
+"Wi-Fi Settings" = "Wi-Fi 設定";
+"OK" = "確認";
+"Close" = "閉じる";
+"Authenticating. This may take a while." = "ログイン中です。お待ちください。";
+"Success. Welcome to the Internet." = "正常にログインしました。";
+"Failed. Response is not correct." = "ログインに失敗しました。応答を間違。";
+"Failed. Network is problematic." = "ログインに失敗しました。ネットワークの問題があります。";
+"Please fill in the blanks!" = "またはパスワードを入力してください。";
+"Empty Username or Password" = "空の名前またはパスワード";
+"SSID is not ShanghaiTech.\n You are now connecting %@." = "SSIDがShanghaiTech/ guestありません。\n現在接続されてネットワーク：%@";
+"title"="このメールを本人に送ってください";
+"content"="このメールを本人(This iOS Device)に送ってください。受信メール内の付着タブします。";
+"Connected"="適切なネットワーク接続されました";
+"noti1"="今ログインすることができます。";
+
+"Pull to refresh"="Pull to refresh";
+"Fail"="失敗しました";
+"Success"="成功";
+"Network is OK"="インターネットに接続されています。";
+"Network is not OK"="インターネットに接続されていません。";
+"withCell"= "\n現在接続されてネットワーク： セルラー";
+"withWiFi"= "\n現在接続されてネットワーク： %@";
+"Authenticating. This may take a while N" = "ログイン中です。お待ちください。 %@/%@";
+
+"Notify"="ログインお知らせ";
+"NotifyDetail"="お知らせを許可すると、ログインすることができるときに、メッセージを受け取ります。";
+"NotifyCancelled"="お知らせ拒否された";
+"NotifyCancelledDetail"="大丈夫。システム設定で、いつでも再度有効にすることができます。";
+"Message From Server"="サーバーのメッセージ";
+"CheckInternet"="接続を確認する";
+"Checking. Please wait."="お待ちください";

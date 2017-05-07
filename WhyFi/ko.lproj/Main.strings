@@ -1,0 +1,59 @@
+
+/* Class = "UITableViewSection"; headerTitle = "More Options"; ObjectID = "2Yr-Bu-Kwd"; */
+"2Yr-Bu-Kwd.headerTitle" = "추가 옵션";
+
+/* Class = "UITableViewSection"; footerTitle = "Enter your identities above. 
+Do not remember PIN on public devices."; ObjectID = "8Ep-nZ-T89"; */
+"8Ep-nZ-T89.footerTitle" = "위의 사용자 이름과 비밀번호를 입력하십시오.
+인증하는 동안 앱을 활성화하십시오.
+배경 알림을 작동 시키려면 멀티 태스킹보기에서 앱을 수동으로 종료하지 마십시오.";
+
+/* Class = "UITableViewSection"; headerTitle = "ShanghaiTech Wi-Fi Network"; ObjectID = "8Ep-nZ-T89"; */
+"8Ep-nZ-T89.headerTitle" = "ShanghaiTech Wi-Fi 네트워크";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "9fX-zC-Y0a"; */
+"9fX-zC-Y0a.text" = "로그인";
+
+/* Class = "UILabel"; text = "Wi-Fi Settings"; ObjectID = "ITx-4f-gZe"; */
+"ITx-4f-gZe.text" = "Wi-Fi 설정";
+
+/* Class = "UIBarButtonItem"; title = "Donate"; ObjectID = "JaX-Gt-brJ"; */
+"JaX-Gt-brJ.title" = "Donate";
+
+/* Class = "UILabel"; text = "Please Login"; ObjectID = "ODl-Io-7KN"; */
+"ODl-Io-7KN.text" = "로그인 해주세요";
+
+/* Class = "UILabel"; text = "Auto Login"; ObjectID = "RVv-Sb-cSj"; */
+"RVv-Sb-cSj.text" = "자동 로그인";
+
+/* Class = "UILabel"; text = "Check Connectivity"; ObjectID = "SDv-hI-7Aa"; */
+"SDv-hI-7Aa.text" = "인터넷 연결 확인";
+
+/* Class = "UILabel"; text = "ID"; ObjectID = "hjk-f5-hfz"; */
+"hjk-f5-hfz.text" = "사용자 이름";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "jTZ-vB-mGI"; */
+"jTZ-vB-mGI.title" = "로그인";
+
+/* Class = "UILabel"; text = "Remember PIN"; ObjectID = "jUJ-NC-6Nm"; */
+"jUJ-NC-6Nm.text" = "암호 기억";
+
+/* Class = "UILabel"; text = "PIN"; ObjectID = "rfL-ac-073"; */
+"rfL-ac-073.text" = "암호";
+
+/* Class = "UILabel"; text = "Install Profile"; ObjectID = "tEZ-GC-OR5"; */
+"tEZ-GC-OR5.text" = "프로필 설치";
+
+/* Class = "UINavigationItem"; title = "Help & Donate"; ObjectID = "x7Z-8c-6Ry"; */
+"x7Z-8c-6Ry.title" = "Help & Donate";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "yJ1-Xa-VGy"; */
+"yJ1-Xa-VGy.title" = "뒤로";
+
+/* Class = "UITextField"; placeholder = "Enter ID Here"; ObjectID = "OyC-OZ-QoY"; */
+"OyC-OZ-QoY.placeholder" = "여기에 사용자 이름을 입력합니다";
+
+/* Class = "UITextField"; placeholder = "Enter Password Here"; ObjectID = "dS9-f0-Urh"; */
+"dS9-f0-Urh.placeholder" = "여기에 암호를 입력합니다";
+
+"4TP-y8-08G.text" = "수동 로그인";

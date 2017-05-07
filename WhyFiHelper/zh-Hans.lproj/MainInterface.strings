@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Wi-Fi Settings"; ObjectID = "F26-JS-Wqs"; */
+"F26-JS-Wqs.normalTitle" = "Wi-Fi 设定";
+
+/* Class = "UILabel"; text = "Wi-Fi:"; ObjectID = "exv-zH-Vab"; */
+"exv-zH-Vab.text" = "Wi-Fi:";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "gmd-EA-Lft"; */
+"gmd-EA-Lft.normalTitle" = "打开";
+
+/* Class = "UILabel"; text = "TBD"; ObjectID = "sP5-rE-zUR"; */
+"sP5-rE-zUR.text" = "TBD";

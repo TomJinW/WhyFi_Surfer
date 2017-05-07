@@ -1,0 +1,40 @@
+/*
+  Localizable.string.strings
+  WhyFi
+
+  Created by 崔振宇 on 2017. 4. 29..
+  Copyright © 2017년 Tom. All rights reserved.
+*/
+"wrongWiFi" = "錯誤的 Wi-Fi 網絡";
+"noWifiConnect" = "裝置沒有連接到 Wi-Fi 網絡";
+"Wi-Fi Settings" = "Wi-Fi 設定";
+"OK" = "確認";
+"Close" = "關閉";
+"Authenticating. This may take a while." = "認證中...這需要一些時間";
+"Success. Welcome to the Internet." = "太棒了！歡迎來到Internet的世界";
+"Failed. Response is not correct." = "哎呀，響應不正確";
+"Failed. Network is problematic." = "哎呀，網絡有問題";
+"Please fill in the blanks!" = "請填寫用戶名和密碼";
+"Empty Username or Password" = "空用戶名或密碼";
+"SSID is not ShanghaiTech.\n You are now connecting %@." = "SSID 不是 ShanghaiTech 或者 guest.\n 當前連接到 %@.";
+"title"="給自己發送這封郵件";
+"content"="給自己(This iOS Device)發送這封郵件，然後點擊郵件中的附件";
+"Connected"="檢測到已經連接到學校網絡";
+"noti1"="檢測到已經連接到學校網絡並且沒有互聯網連接，現在就進入 App 登錄";
+
+"Pull to refresh"="下拉登錄";
+"Fail"="失敗";
+"Success"="成功";
+"Network is OK"="互聯網連接正常";
+"Network is not OK"="互聯網連接中斷";
+"withCell"= "\n當前正在使用蜂窩移動網絡";
+"withWiFi"= "\n當前 Wi-Fi 連接到 %@";
+"Authenticating. This may take a while N" = "認證中...這需要一些時間 %@/%@";
+
+"Notify"="允許 App 智能地通知你連接到網絡";
+"NotifyDetail"="允許應用顯示通知後，當接入到指定的 Wi-Fi 網絡並且沒有互聯網的時候，我們會通知你打開應用。\n為了實現該功能，請務必要打開WhyFi的後台應用刷新功能。";
+"NotifyCancelled"="已拒絕允許通知顯示";
+"NotifyCancelledDetail"="沒關係，你可以隨時在系統設置里啓用";
+"Message From Server"="來自伺服器的消息";
+"CheckInternet"="檢查互聯網連接";
+"Checking. Please wait."="這需要一些時間";

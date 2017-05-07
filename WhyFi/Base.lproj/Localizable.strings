@@ -1,0 +1,40 @@
+/*
+ Localizable.string.strings
+ WhyFi
+ 
+ Created by 崔振宇 on 2017. 4. 29..
+ Copyright © 2017년 Tom. All rights reserved.
+ */
+"wrongWiFi" = "Wrong Wi-Fi Network";
+"noWifiConnect" = "No Wi-Fi Network Connected";
+"Wi-Fi Settings" = "Wi-Fi Settings";
+"OK" = "OK";
+"Close" = "Close";
+"Authenticating. This may take a while." = "Authenticating.";
+"Success. Welcome to the Internet." = "Success. Welcome to the Internet.";
+"Failed. Response is not correct." = "Login failed. Response is not correct.";
+"Failed. Network is problematic." = "Login failed. Network is problematic.";
+"Please fill in the blanks!" = "Please fill in the blanks.";
+"Empty Username or Password" = "Empty Username or Password";
+"SSID is not ShanghaiTech.\n You are now connecting %@." = "SSID is not ShanghaiTech or guest.\n You are now connecting %@.";
+"title"="Send yourself this email";
+"content"="Send yourself(This iOS Device) this email and tap the attachment within the received mail.";
+"Connected"="You have connected to";
+"noti1"="Finish authorization Now.";
+
+"Pull to refresh"="Pull to refresh";
+"Fail"="Fail.";
+"Success"="Success.";
+"Network is OK"="You are connected to the Internet.";
+"Network is not OK"="You are not connected to the Internet.";
+"withCell"= "\nCurrent Network: Cellular";
+"withWiFi"= "\nCurrent Network: %@";
+"Authenticating. This may take a while N" = "Authenticating. %@/%@";
+
+"Notify"="Allow notifying you to Login";
+"NotifyDetail"="If you allow notification, you will receive message when you can Login.";
+"NotifyCancelled"="Notification Declined";
+"NotifyCancelledDetail"="No problem, you can always enable it again in System Settings.";
+"Message From Server"="Message From Server";
+"CheckInternet"="Check Connectivity";
+"Checking. Please wait."="Please wait";

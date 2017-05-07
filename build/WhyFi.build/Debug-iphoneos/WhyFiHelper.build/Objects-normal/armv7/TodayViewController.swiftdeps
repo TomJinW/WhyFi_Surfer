@@ -1,0 +1,509 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TodayViewController"
+provides-nominal:
+- "C11WhyFiHelper19TodayViewController"
+provides-member:
+- ["C11WhyFiHelper19TodayViewController", ""]
+provides-dynamic-lookup:
+- "LoginPressed"
+- "didReceiveMemoryWarning"
+- "settingsPressed"
+- "viewDidLoad"
+- "widgetPerformUpdate"
+- "wifiName"
+depends-top-level:
+- !private "!="
+- "AssignmentPrecedence"
+- "NCUpdateResult"
+- "NCWidgetProviding"
+- !private "StringLiteralType"
+- "TodayViewController"
+- "UIButton"
+- "UILabel"
+- "UIViewController"
+- !private "URL"
+- "Void"
+- !private "network"
+depends-member:
+- !private ["Ps9AnyObject", "NCUpdateResult"]
+- !private ["Ps9AnyObject", "URL"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "extensionContext"]
+- !private ["Ps9AnyObject", "getSSID"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "network"]
+- !private ["Ps9AnyObject", "open"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "widgetActiveDisplayModeDidChange"]
+- ["Ps9AnyObject", "widgetMarginInsets"]
+- ["Ps9AnyObject", "widgetMarginInsetsForProposedMarginInsets"]
+- ["Ps9AnyObject", "widgetPerformUpdate"]
+- ["Ps9AnyObject", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["Ps9AnyObject", "wifiName"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "NCUpdateResult"]
+- !private ["Ps7CVarArg", "URL"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "extensionContext"]
+- !private ["Ps7CVarArg", "getSSID"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "network"]
+- !private ["Ps7CVarArg", "open"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "widgetActiveDisplayModeDidChange"]
+- ["Ps7CVarArg", "widgetMarginInsets"]
+- ["Ps7CVarArg", "widgetMarginInsetsForProposedMarginInsets"]
+- ["Ps7CVarArg", "widgetPerformUpdate"]
+- ["Ps7CVarArg", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["Ps7CVarArg", "wifiName"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "NCUpdateResult"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "extensionContext"]
+- !private ["Ps28CustomDebugStringConvertible", "getSSID"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "network"]
+- !private ["Ps28CustomDebugStringConvertible", "open"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "widgetActiveDisplayModeDidChange"]
+- ["Ps28CustomDebugStringConvertible", "widgetMarginInsets"]
+- ["Ps28CustomDebugStringConvertible", "widgetMarginInsetsForProposedMarginInsets"]
+- ["Ps28CustomDebugStringConvertible", "widgetPerformUpdate"]
+- ["Ps28CustomDebugStringConvertible", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["Ps28CustomDebugStringConvertible", "wifiName"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "NCUpdateResult"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "extensionContext"]
+- !private ["Ps23CustomStringConvertible", "getSSID"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "network"]
+- !private ["Ps23CustomStringConvertible", "open"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "widgetActiveDisplayModeDidChange"]
+- ["Ps23CustomStringConvertible", "widgetMarginInsets"]
+- ["Ps23CustomStringConvertible", "widgetMarginInsetsForProposedMarginInsets"]
+- ["Ps23CustomStringConvertible", "widgetPerformUpdate"]
+- ["Ps23CustomStringConvertible", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["Ps23CustomStringConvertible", "wifiName"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "NCUpdateResult"]
+- !private ["Ps9Equatable", "URL"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "extensionContext"]
+- !private ["Ps9Equatable", "getSSID"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "network"]
+- !private ["Ps9Equatable", "newData"]
+- !private ["Ps9Equatable", "open"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "widgetActiveDisplayModeDidChange"]
+- ["Ps9Equatable", "widgetMarginInsets"]
+- ["Ps9Equatable", "widgetMarginInsetsForProposedMarginInsets"]
+- ["Ps9Equatable", "widgetPerformUpdate"]
+- ["Ps9Equatable", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["Ps9Equatable", "wifiName"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "NCUpdateResult"]
+- !private ["Ps8Hashable", "URL"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "extensionContext"]
+- !private ["Ps8Hashable", "getSSID"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "network"]
+- !private ["Ps8Hashable", "newData"]
+- !private ["Ps8Hashable", "open"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "widgetActiveDisplayModeDidChange"]
+- ["Ps8Hashable", "widgetMarginInsets"]
+- ["Ps8Hashable", "widgetMarginInsetsForProposedMarginInsets"]
+- ["Ps8Hashable", "widgetPerformUpdate"]
+- ["Ps8Hashable", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["Ps8Hashable", "wifiName"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["OSC14NCUpdateResult", "newData"]
+- !private ["PSo17NCWidgetProviding", "NCUpdateResult"]
+- !private ["PSo17NCWidgetProviding", "URL"]
+- !private ["PSo17NCWidgetProviding", "extensionContext"]
+- !private ["PSo17NCWidgetProviding", "network"]
+- ["PSo17NCWidgetProviding", "widgetActiveDisplayModeDidChange"]
+- ["PSo17NCWidgetProviding", "widgetMarginInsets"]
+- ["PSo17NCWidgetProviding", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo17NCWidgetProviding", "widgetPerformUpdate"]
+- ["PSo17NCWidgetProviding", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo17NCWidgetProviding", "wifiName"]
+- ["PSo17NCWidgetProviding", ""]
+- !private ["PSo8NSCoding", "NCUpdateResult"]
+- !private ["PSo8NSCoding", "URL"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "extensionContext"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "network"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "widgetActiveDisplayModeDidChange"]
+- ["PSo8NSCoding", "widgetMarginInsets"]
+- ["PSo8NSCoding", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo8NSCoding", "widgetPerformUpdate"]
+- ["PSo8NSCoding", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo8NSCoding", "wifiName"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo18NSExtensionContext", "open"]
+- !private ["PSo26NSExtensionRequestHandling", "NCUpdateResult"]
+- !private ["PSo26NSExtensionRequestHandling", "URL"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "extensionContext"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "network"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "widgetActiveDisplayModeDidChange"]
+- ["PSo26NSExtensionRequestHandling", "widgetMarginInsets"]
+- ["PSo26NSExtensionRequestHandling", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo26NSExtensionRequestHandling", "widgetPerformUpdate"]
+- ["PSo26NSExtensionRequestHandling", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo26NSExtensionRequestHandling", "wifiName"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "LoginPressed"]
+- ["CSo8NSObject", "NCUpdateResult"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "URL"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "extensionContext"]
+- !private ["CSo8NSObject", "getSSID"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "network"]
+- !private ["CSo8NSObject", "open"]
+- ["CSo8NSObject", "settingsPressed"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "widgetActiveDisplayModeDidChange"]
+- ["CSo8NSObject", "widgetMarginInsets"]
+- ["CSo8NSObject", "widgetMarginInsetsForProposedMarginInsets"]
+- ["CSo8NSObject", "widgetPerformUpdate"]
+- ["CSo8NSObject", "widgetPerformUpdateWithCompletionHandler"]
+- ["CSo8NSObject", "wifiName"]
+- !private ["PSo16NSObjectProtocol", "NCUpdateResult"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "extensionContext"]
+- !private ["PSo16NSObjectProtocol", "getSSID"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "network"]
+- !private ["PSo16NSObjectProtocol", "open"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "widgetActiveDisplayModeDidChange"]
+- ["PSo16NSObjectProtocol", "widgetMarginInsets"]
+- ["PSo16NSObjectProtocol", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo16NSObjectProtocol", "widgetPerformUpdate"]
+- ["PSo16NSObjectProtocol", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo16NSObjectProtocol", "wifiName"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps16RawRepresentable", "newData"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- ["C11WhyFiHelper19TodayViewController", "LoginPressed"]
+- ["C11WhyFiHelper19TodayViewController", "NCUpdateResult"]
+- ["C11WhyFiHelper19TodayViewController", "UIButton"]
+- ["C11WhyFiHelper19TodayViewController", "UILabel"]
+- !private ["C11WhyFiHelper19TodayViewController", "URL"]
+- ["C11WhyFiHelper19TodayViewController", "Void"]
+- ["C11WhyFiHelper19TodayViewController", "deinit"]
+- ["C11WhyFiHelper19TodayViewController", "didReceiveMemoryWarning"]
+- !private ["C11WhyFiHelper19TodayViewController", "extensionContext"]
+- ["C11WhyFiHelper19TodayViewController", "init"]
+- !private ["C11WhyFiHelper19TodayViewController", "network"]
+- ["C11WhyFiHelper19TodayViewController", "settingsPressed"]
+- ["C11WhyFiHelper19TodayViewController", "viewDidLoad"]
+- ["C11WhyFiHelper19TodayViewController", "widgetActiveDisplayModeDidChange"]
+- ["C11WhyFiHelper19TodayViewController", "widgetMarginInsets"]
+- ["C11WhyFiHelper19TodayViewController", "widgetMarginInsetsForProposedMarginInsets"]
+- ["C11WhyFiHelper19TodayViewController", "widgetPerformUpdate"]
+- ["C11WhyFiHelper19TodayViewController", "widgetPerformUpdateWithCompletionHandler"]
+- ["C11WhyFiHelper19TodayViewController", "wifiName"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "NCUpdateResult"]
+- !private ["PSo21UIAppearanceContainer", "URL"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "extensionContext"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "network"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "widgetActiveDisplayModeDidChange"]
+- ["PSo21UIAppearanceContainer", "widgetMarginInsets"]
+- ["PSo21UIAppearanceContainer", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo21UIAppearanceContainer", "widgetPerformUpdate"]
+- ["PSo21UIAppearanceContainer", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo21UIAppearanceContainer", "wifiName"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "NCUpdateResult"]
+- !private ["PSo18UIContentContainer", "URL"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "extensionContext"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "network"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "widgetActiveDisplayModeDidChange"]
+- ["PSo18UIContentContainer", "widgetMarginInsets"]
+- ["PSo18UIContentContainer", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo18UIContentContainer", "widgetPerformUpdate"]
+- ["PSo18UIContentContainer", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo18UIContentContainer", "wifiName"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "NCUpdateResult"]
+- !private ["PSo18UIFocusEnvironment", "URL"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "extensionContext"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "network"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "widgetActiveDisplayModeDidChange"]
+- ["PSo18UIFocusEnvironment", "widgetMarginInsets"]
+- ["PSo18UIFocusEnvironment", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo18UIFocusEnvironment", "widgetPerformUpdate"]
+- ["PSo18UIFocusEnvironment", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo18UIFocusEnvironment", "wifiName"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "LoginPressed"]
+- ["CSo11UIResponder", "NCUpdateResult"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "URL"]
+- ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "extensionContext"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "network"]
+- ["CSo11UIResponder", "settingsPressed"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "widgetActiveDisplayModeDidChange"]
+- ["CSo11UIResponder", "widgetMarginInsets"]
+- ["CSo11UIResponder", "widgetMarginInsetsForProposedMarginInsets"]
+- ["CSo11UIResponder", "widgetPerformUpdate"]
+- ["CSo11UIResponder", "widgetPerformUpdateWithCompletionHandler"]
+- ["CSo11UIResponder", "wifiName"]
+- !private ["PSo30UIResponderStandardEditActions", "NCUpdateResult"]
+- !private ["PSo30UIResponderStandardEditActions", "URL"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "extensionContext"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "network"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "widgetActiveDisplayModeDidChange"]
+- ["PSo30UIResponderStandardEditActions", "widgetMarginInsets"]
+- ["PSo30UIResponderStandardEditActions", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo30UIResponderStandardEditActions", "widgetPerformUpdate"]
+- ["PSo30UIResponderStandardEditActions", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo30UIResponderStandardEditActions", "wifiName"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "NCUpdateResult"]
+- !private ["PSo16UIStateRestoring", "URL"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "extensionContext"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "network"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "widgetActiveDisplayModeDidChange"]
+- ["PSo16UIStateRestoring", "widgetMarginInsets"]
+- ["PSo16UIStateRestoring", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo16UIStateRestoring", "widgetPerformUpdate"]
+- ["PSo16UIStateRestoring", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo16UIStateRestoring", "wifiName"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "NCUpdateResult"]
+- !private ["PSo18UITraitEnvironment", "URL"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "extensionContext"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "network"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "widgetActiveDisplayModeDidChange"]
+- ["PSo18UITraitEnvironment", "widgetMarginInsets"]
+- ["PSo18UITraitEnvironment", "widgetMarginInsetsForProposedMarginInsets"]
+- ["PSo18UITraitEnvironment", "widgetPerformUpdate"]
+- ["PSo18UITraitEnvironment", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["PSo18UITraitEnvironment", "wifiName"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "LoginPressed"]
+- ["CSo16UIViewController", "NCUpdateResult"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "URL"]
+- ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "extensionContext"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "network"]
+- ["CSo16UIViewController", "settingsPressed"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "widgetActiveDisplayModeDidChange"]
+- ["CSo16UIViewController", "widgetMarginInsets"]
+- ["CSo16UIViewController", "widgetMarginInsetsForProposedMarginInsets"]
+- ["CSo16UIViewController", "widgetPerformUpdate"]
+- ["CSo16UIViewController", "widgetPerformUpdateWithCompletionHandler"]
+- ["CSo16UIViewController", "wifiName"]
+- ["CSo16UIViewController", ""]
+- !private ["V10Foundation3URL", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "NCUpdateResult"]
+- !private ["Ps9_Hashable", "URL"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "extensionContext"]
+- !private ["Ps9_Hashable", "getSSID"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "network"]
+- !private ["Ps9_Hashable", "newData"]
+- !private ["Ps9_Hashable", "open"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "widgetActiveDisplayModeDidChange"]
+- ["Ps9_Hashable", "widgetMarginInsets"]
+- ["Ps9_Hashable", "widgetMarginInsetsForProposedMarginInsets"]
+- ["Ps9_Hashable", "widgetPerformUpdate"]
+- ["Ps9_Hashable", "widgetPerformUpdateWithCompletionHandler"]
+- !private ["Ps9_Hashable", "wifiName"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["C11WhyFiHelper7network", "getSSID"]
+- !private ["C11WhyFiHelper7network", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "OSC14NCUpdateResult"
+- "PSo17NCWidgetProviding"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo18NSExtensionContext"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "C11WhyFiHelper19TodayViewController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "V10Foundation3URL"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "C11WhyFiHelper7network"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/NotificationCenter.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+interface-hash: "f5a714aab4af8e09fd3191a248cce915"

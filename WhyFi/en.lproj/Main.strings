@@ -1,0 +1,58 @@
+/* Class = "UITableViewSection"; headerTitle = "More Options"; ObjectID = "2Yr-Bu-Kwd"; */
+"2Yr-Bu-Kwd.headerTitle" = "More Options";
+
+/* Class = "UITableViewSection"; footerTitle = "Enter your identities above.
+ Do not remember PIN on public devices."; ObjectID = "8Ep-nZ-T89"; */
+"8Ep-nZ-T89.footerTitle" = "Enter your identities above.
+Please keep app active during authentication
+To make background notifications to work, do not manually exit App in multitasking view.";
+
+/* Class = "UITableViewSection"; headerTitle = "ShanghaiTech Wi-Fi Network"; ObjectID = "8Ep-nZ-T89"; */
+"8Ep-nZ-T89.headerTitle" = "ShanghaiTech Wi-Fi Network";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "9fX-zC-Y0a"; */
+"9fX-zC-Y0a.text" = "Login";
+
+/* Class = "UILabel"; text = "Wi-Fi Settings"; ObjectID = "ITx-4f-gZe"; */
+"ITx-4f-gZe.text" = "Wi-Fi Settings";
+
+/* Class = "UIBarButtonItem"; title = "Donate"; ObjectID = "JaX-Gt-brJ"; */
+"JaX-Gt-brJ.title" = "Donate";
+
+/* Class = "UILabel"; text = "Please Login"; ObjectID = "ODl-Io-7KN"; */
+"ODl-Io-7KN.text" = "Please Login";
+
+/* Class = "UILabel"; text = "Auto Login"; ObjectID = "RVv-Sb-cSj"; */
+"RVv-Sb-cSj.text" = "Auto Login";
+
+/* Class = "UILabel"; text = "Check Connectivity"; ObjectID = "SDv-hI-7Aa"; */
+"SDv-hI-7Aa.text" = "Check Connectivity";
+
+/* Class = "UILabel"; text = "ID"; ObjectID = "hjk-f5-hfz"; */
+"hjk-f5-hfz.text" = "ID";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "jTZ-vB-mGI"; */
+"jTZ-vB-mGI.title" = "Login";
+
+/* Class = "UILabel"; text = "Remember PIN"; ObjectID = "jUJ-NC-6Nm"; */
+"jUJ-NC-6Nm.text" = "Remember PIN";
+
+/* Class = "UILabel"; text = "PIN"; ObjectID = "rfL-ac-073"; */
+"rfL-ac-073.text" = "PIN";
+
+/* Class = "UILabel"; text = "Install Profile"; ObjectID = "tEZ-GC-OR5"; */
+"tEZ-GC-OR5.text" = "Install Profile";
+
+/* Class = "UINavigationItem"; title = "Help & Donate"; ObjectID = "x7Z-8c-6Ry"; */
+"x7Z-8c-6Ry.title" = "Help & Donate";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "yJ1-Xa-VGy"; */
+"yJ1-Xa-VGy.title" = "Back";
+
+/* Class = "UITextField"; placeholder = "Enter ID Here"; ObjectID = "OyC-OZ-QoY"; */
+"OyC-OZ-QoY.placeholder" = "Enter ID Here";
+
+/* Class = "UITextField"; placeholder = "Enter Password Here"; ObjectID = "dS9-f0-Urh"; */
+"dS9-f0-Urh.placeholder" = "Enter Password Here";
+
+"4TP-y8-08G.text" = "Login Manually";

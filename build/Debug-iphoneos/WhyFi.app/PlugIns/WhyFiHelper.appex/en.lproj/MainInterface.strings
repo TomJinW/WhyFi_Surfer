@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Wi-Fi"; ObjectID = "exv-zH-Vab"; */
+"exv-zH-Vab.text" = "Wi-Fi";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "gmd-EA-Lft"; */
+"gmd-EA-Lft.normalTitle" = "Open";
+
+/* Class = "UILabel"; text = "TBD"; ObjectID = "sP5-rE-zUR"; */
+"sP5-rE-zUR.text" = "TBD";
+
+/* Class = "UIButton"; normalTitle = "Wi-Fi"; ObjectID = "xjS-OQ-2du"; */
+"xjS-OQ-2du.normalTitle" = "Wi-Fi";

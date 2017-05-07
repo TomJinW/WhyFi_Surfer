@@ -1,0 +1,40 @@
+/* 
+  Localizable.string.strings
+  WhyFi
+
+  Created by 崔振宇 on 2017. 4. 29..
+  Copyright © 2017년 Tom. All rights reserved.
+*/
+"wrongWiFi" = "잘못된 Wi-Fi 네트워크";
+"noWifiConnect" = "Wi-Fi 네트워크 연결 하지 안습니다";
+"Wi-Fi Settings" = "Wi-Fi 설정";
+"OK" = "확인";
+"Close" = "닫기";
+"Authenticating. This may take a while." = "로그인 중입니다.기다려 주십시오.";
+"Success. Welcome to the Internet." = "성공적으로 로그인 되었습니다.";
+"Failed. Response is not correct." = "로그인 실패했습니다.응답을 잘못되었습니다.";
+"Failed. Network is problematic." = "로그인 실패했습니다. 네트워크 문제가 있습니다.";
+"Please fill in the blanks!" = "이름 또는 암호 입력하십시오.";
+"Empty Username or Password" = "빈 이름 또는 암호";
+"SSID is not ShanghaiTech.\n You are now connecting %@." = "SSID가 ShanghaiTech/guest 아닙니다.\n 현재 연결되어 네트워크: %@.";
+"title"="이 이메일을 본인에게 보내십시오";
+"content"="이 이메일을 본인(This iOS Device)에게 보내십시오.수신 메일 내의 부착 탭하세요.";
+"Connected"="적당한 네트워크 연결되었습니다";
+"noti1"="지금 로그인을 할 수 있습니다.";
+
+"Pull to refresh"="Pull to refresh";
+"Fail"="실패";
+"Success"="성공";
+"Network is OK"="인터넷에 연결되어 있습니다.";
+"Network is not OK"="인터넷에 연결되어 있지 않습니다.";
+"withCell"= "\n현재 연결되어 네트워크: 셀룰러";
+"withWiFi"= "\n현재 연결되어 네트워크: %@";
+"Authenticating. This may take a while N" = "로그인 중입니다.기다려 주십시오. %@/%@";
+
+"Notify"="로그인 알림";
+"NotifyDetail"="알림을 허용하면 로그인 할 수있을 때 메시지를 받게됩니다.";
+"NotifyCancelled"="알림 거부 됨";
+"NotifyCancelledDetail"="괜찮아. 시스템 설정에서 언제든지 다시 활성화 할 수 있습니다.";
+"Message From Server"="서버의 메시지";
+"CheckInternet"="인터넷 연결 확인";
+"Checking. Please wait."="기다려 주십시오";
