@@ -16,25 +16,41 @@ import SystemConfiguration
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var login = false;
+    var wifi = false;
+    var bus = false;
     func completePing (timeElapsed:Double?, error:Error?){
         if error != nil {
-            let content = UNMutableNotificationContent()
-            content.title = "Connected".localized
-            content.subtitle = "ShanghaiTech or guest"
-            content.body = "noti1".localized
-            content.badge = 1
-            content.sound = UNNotificationSound.default()
-            
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-            let request = UNNotificationRequest(identifier: "notification1", content: content, trigger: trigger)
-            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+
+            if #available(iOS 10.0, *) {
+                let content = UNMutableNotificationContent()
+                content.title = "Connected".localized
+                content.subtitle = "ShanghaiTech or guest"
+                content.body = "noti1".localized
+                content.badge = 1
+                content.sound = UNNotificationSound.default()
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+                let request = UNNotificationRequest(identifier: "notification1", content: content, trigger: trigger)
+                UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            } else {
+                let notification = UILocalNotification()
+                notification.alertTitle = "Connected".localized
+                notification.fireDate = NSDate(timeIntervalSinceNow: 1) as Date
+                notification.alertBody = "noti1".localized+"\nShanghaiTech or guest"
+                notification.soundName = UILocalNotificationDefaultSoundName
+                UIApplication.shared.scheduleLocalNotification(notification)
+            }
+
         }
     }
+
     
     func isInternetAvailable()
     {
-        PlainPing.ping("baidu.com", withTimeout: 3.0,completionBlock: completePing)
+        PlainPing.ping("baidu.com", withTimeout: 2.0,completionBlock: completePing)
+    }
+    func application(_ application: UIApplication,didRegister notificationSettings: UIUserNotificationSettings){
+        
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -53,6 +69,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func getData(){
+
+        
+        
         let wifiName = network().getSSID()
         if (wifiName != nil){
             if (wifiName == "ShanghaiTech" || wifiName == "guest"){
@@ -75,29 +94,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ app: UIApplication,  open url: URL,  options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("\nDEALING URL")
         let urlComponents = NSURLComponents(url: url as URL, resolvingAgainstBaseURL: false)
         let items = (urlComponents?.queryItems)! as [NSURLQueryItem] // {name = backgroundcolor, value = red}
+        login = false;
+        wifi = false;
         if (url.scheme == "org.ShanghaiTech.WhyFi") {
             _ = UIApplication.shared.delegate as! AppDelegate
             if let _ = items.first, let propertyName = items.first?.name, let propertyValue = items.first?.value {
                 if propertyName == "performLogin"{
                     if propertyValue == "true"{
-                    
+                        self.login = true;
+                        self.wifi = false;
+                        self.bus = false;
+                        print("SET LOGIN TRUE");
+                        
                     }
                     
                 }else if propertyName == "openSettings" {
                     if propertyValue == "true"{
-                        guard let settingsUrl = URL(string: "App-Prefs:root=WIFI") else {
-                            return false
-                            
-                        }
-                        
-                        if UIApplication.shared.canOpenURL(settingsUrl) {
-                            UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                                print("Settings opened: \(success)") // Prints true
-                            })
-                        }
-                        
+                        self.wifi = true;
+                        self.login = false;
+                        self.bus = false;
+                        print("SET WIFI TRUE");
+                    }
+                }else if propertyName == "bus" {
+                    if propertyValue == "true"{
+                        self.bus = true;
+                        self.login = false;
+                        self.wifi = false;
+                        print("SET WIFI TRUE");
                     }
                 }
 

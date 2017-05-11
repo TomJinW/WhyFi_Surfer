@@ -10,7 +10,7 @@
 "Wi-Fi Settings" = "Wi-Fi 設定";
 "OK" = "確認";
 "Close" = "關閉";
-"Authenticating. This may take a while." = "認證中...這需要一些時間";
+"Authenticating. This may take a while." = "認證中...請勿離開";
 "Success. Welcome to the Internet." = "太棒了！歡迎來到Internet的世界";
 "Failed. Response is not correct." = "哎呀，響應不正確";
 "Failed. Network is problematic." = "哎呀，網絡有問題";
@@ -29,7 +29,7 @@
 "Network is not OK"="互聯網連接中斷";
 "withCell"= "\n當前正在使用蜂窩移動網絡";
 "withWiFi"= "\n當前 Wi-Fi 連接到 %@";
-"Authenticating. This may take a while N" = "認證中...這需要一些時間 %@/%@";
+"Authenticating. This may take a while N" = "認證中...請勿離開 %@/%@";
 
 "Notify"="允許 App 智能地通知你連接到網絡";
 "NotifyDetail"="允許應用顯示通知後，當接入到指定的 Wi-Fi 網絡並且沒有互聯網的時候，我們會通知你打開應用。\n為了實現該功能，請務必要打開WhyFi的後台應用刷新功能。";
@@ -38,3 +38,16 @@
 "Message From Server"="來自伺服器的消息";
 "CheckInternet"="檢查互聯網連接";
 "Checking. Please wait."="這需要一些時間";
+"Email Acoount not Configured"="郵箱賬戶未設置";
+"notshownmsg"="需要在手機上設置一個郵箱賬戶（不一定是學校的）才能使用這個功能。";
+"Email Settings"="郵箱設定";
+
+"Login" = "登錄";
+"Cancel"= "取消";
+"Canceling"= "取消中";
+"Canceled"= "已取消";
+
+"Install"="安裝";
+"Install Profile"="安裝描述文件";
+"whyInstall"="恭喜成功連接到網絡
+安裝描述文件能關閉系統默認的彈出功能，如果已經安裝描述文件則無需理會，任何時候都可以通過菜單重新安裝。這則訊息將不會再顯示。";

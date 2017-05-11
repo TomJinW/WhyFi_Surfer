@@ -5,7 +5,6 @@
 /* Class = "UITableViewSection"; footerTitle = "Enter your identities above. 
 Do not remember PIN on public devices."; ObjectID = "8Ep-nZ-T89"; */
 "8Ep-nZ-T89.footerTitle" = "위의 사용자 이름과 비밀번호를 입력하십시오.
-인증하는 동안 앱을 활성화하십시오.
 배경 알림을 작동 시키려면 멀티 태스킹보기에서 앱을 수동으로 종료하지 마십시오.";
 
 /* Class = "UITableViewSection"; headerTitle = "ShanghaiTech Wi-Fi Network"; ObjectID = "8Ep-nZ-T89"; */
@@ -42,7 +41,8 @@ Do not remember PIN on public devices."; ObjectID = "8Ep-nZ-T89"; */
 "rfL-ac-073.text" = "암호";
 
 /* Class = "UILabel"; text = "Install Profile"; ObjectID = "tEZ-GC-OR5"; */
-"tEZ-GC-OR5.text" = "프로필 설치";
+"tEZ-GC-OR5.text" = "프로필 설치(Mail)";
+"E9N-8D-Tac.text" = "프로필 설치(Safari)";
 
 /* Class = "UINavigationItem"; title = "Help & Donate"; ObjectID = "x7Z-8c-6Ry"; */
 "x7Z-8c-6Ry.title" = "Help & Donate";
@@ -57,3 +57,10 @@ Do not remember PIN on public devices."; ObjectID = "8Ep-nZ-T89"; */
 "dS9-f0-Urh.placeholder" = "여기에 암호를 입력합니다";
 
 "4TP-y8-08G.text" = "수동 로그인";
+
+"3xh-1B-aHg.headerTitle" = "시스템 설정으로 이동";
+"t18-5A-8mn.text" = "Wi-Fi";
+"KQP-8L-7Y5.text" = "알림";
+"ts1-bj-AXW.text" = "백그라운드 앱 새로 고침";
+
+"X3x-T0-QZ6.headerTitle"="유틸리티";

@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="LoginPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="onp-ws-APx"/>
+                                    <action selector="LoginPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="hgW-Ox-rhO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-OQ-2du">
@@ -38,8 +38,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Wi-Fi"/>
                                 <connections>
-                                    <action selector="LoginPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="cge-uI-S5o"/>
-                                    <action selector="settingsPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="guC-oV-p4e"/>
+                                    <action selector="settingsPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Nb9-VC-1IO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exv-zH-Vab">

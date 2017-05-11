@@ -6,7 +6,7 @@
 "exv-zH-Vab.text" = "Wi-Fi:";
 
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "gmd-EA-Lft"; */
-"gmd-EA-Lft.normalTitle" = "オープン";
+"gmd-EA-Lft.normalTitle" = "ログイン";
 
 /* Class = "UILabel"; text = "TBD"; ObjectID = "sP5-rE-zUR"; */
 "sP5-rE-zUR.text" = "TBD";

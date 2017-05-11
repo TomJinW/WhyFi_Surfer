@@ -12,6 +12,8 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var wifiName: UILabel!
+    @IBOutlet weak var lblWiFi: UILabel!
+    @IBOutlet weak var fas: UIButton!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     }
     
+    @IBAction func a(_ sender: Any) {
+    }
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         // If an error is encountered, use NCUpdateResult.Failed
@@ -40,13 +44,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     @IBAction func settingsPressed(_ sender: UIButton) {
-                extensionContext?.open(URL(string: "org.ShanghaiTech.WhyFi://?openSettings=true")! , completionHandler: nil)
+        extensionContext?.open(URL(string: "org.ShanghaiTech.WhyFi://?openSettings=true")! , completionHandler: nil)
 
     }
     
-    
-    @IBAction func LoginPressed(_ sender: Any) {
-                extensionContext?.open(URL(string: "org.ShanghaiTech.WhyFi://?performLogin=true")! , completionHandler: nil)
-        
+    @IBAction func LoginPressed(_ sender: UIButton) {
+        extensionContext?.open(URL(string: "org.ShanghaiTech.WhyFi://?performLogin=true")! , completionHandler: nil)
     }
+//    @IBAction func busPressed(_ sender: UIButton) {
+//        extensionContext?.open(URL(string: "org.ShanghaiTech.WhyFi://?bus=true")! , completionHandler: nil)
+//    }
+
+
 }

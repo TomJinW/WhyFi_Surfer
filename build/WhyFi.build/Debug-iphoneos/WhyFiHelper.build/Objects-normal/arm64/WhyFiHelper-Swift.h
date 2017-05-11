@@ -151,7 +151,7 @@ SWIFT_CLASS("_TtC11WhyFiHelper19TodayViewController")
 - (void)didReceiveMemoryWarning;
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^ _Nonnull)(NCUpdateResult))completionHandler;
 - (IBAction)settingsPressed:(UIButton * _Nonnull)sender;
-- (IBAction)LoginPressed:(id _Nonnull)sender;
+- (IBAction)LoginPressed:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

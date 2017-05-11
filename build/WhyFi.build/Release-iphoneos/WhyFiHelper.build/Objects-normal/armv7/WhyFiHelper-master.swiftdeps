@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "3273f8bc5a350af7ad9c43b84e3def37"
+build_time: [547743420, 265638000]
+inputs:
+  "/Users/tom/Developer/WhyFi/WhyFiHelper/network.swift": [9223372036854775807, 0]
+  "/Users/tom/Developer/WhyFi/WhyFiHelper/TodayViewController.swift": [9223372036854775807, 0]

@@ -10,7 +10,7 @@
 "Wi-Fi Settings" = "Wi-Fi Settings";
 "OK" = "OK";
 "Close" = "Close";
-"Authenticating. This may take a while." = "Authenticating.";
+"Authenticating. This may take a while." = "Processing. Don't leave.";
 "Success. Welcome to the Internet." = "Success. Welcome to the Internet.";
 "Failed. Response is not correct." = "Login failed. Response is not correct.";
 "Failed. Network is problematic." = "Login failed. Network is problematic.";
@@ -23,13 +23,13 @@
 "noti1"="Finish authorization Now.";
 
 "Pull to refresh"="Pull to refresh";
-"Fail"="Fail.";
+"Fail"="Fail";
 "Success"="Success.";
 "Network is OK"="You are connected to the Internet.";
 "Network is not OK"="You are not connected to the Internet.";
 "withCell"= "\nCurrent Network: Cellular";
 "withWiFi"= "\nCurrent Network: %@";
-"Authenticating. This may take a while N" = "Authenticating. %@/%@";
+"Authenticating. This may take a while N" = "Processing. Don't leave. %@/%@";
 
 "Notify"="Allow notifying you to Login";
 "NotifyDetail"="If you allow notification, you will receive message when you can Login.";
@@ -38,3 +38,16 @@
 "Message From Server"="Message From Server";
 "CheckInternet"="Check Connectivity";
 "Checking. Please wait."="Please wait";
+"Email Acoount not Configured"="Email Adress not set up";
+"notshownmsg"="You need to set up an email address on your device.";
+"Email Settings"="Email Settings";
+
+"Login" = "Login";
+"Cancel"= "Cancel";
+"Canceling"= "Now Canceling";
+"Canceled"= "Canceled";
+
+"Install"="Install";
+"Install Profile"="Install Profile";
+"whyInstall"="Congratulations for connecting the Internet.
+System built in auto login will be turned off after installation.Ignore this message if you already installed it.You can install it again at anytime from the menu.This message will not show again.";

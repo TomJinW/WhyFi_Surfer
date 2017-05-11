@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>2JVYJA97AU.org.ShanghaiTech.WhyFi</string>
+	<string>898H4HN6GK.org.ShanghaiTech.WhyFi8</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>2JVYJA97AU</string>
+	<string>898H4HN6GK</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>2JVYJA97AU.org.ShanghaiTech.WhyFi</string>
+		<string>898H4HN6GK.org.ShanghaiTech.WhyFi8</string>
 	</array>
 </dict>
 </plist>

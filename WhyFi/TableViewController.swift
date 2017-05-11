@@ -16,11 +16,13 @@ import SystemConfiguration
 
 
 
-let count = 10;let time = 1000000;
+let count = 10;let time = 3000000;
 let keychain = Keychain(service: "org.ShanghaiTech.WhyFi-token").synchronizable(true)
 //let keychain = Keychain(server: "controller1.net.shanghaitech.edu.cn", protocolType: .https)
 var firstTime = false;
 var globalsuccess = true;
+let busurl = "http://zhouzean.cn/bus1.html"
+let configUrl = "http://shtechnas.cn:8086/ShanghaiTech.mobileconfig"
 
 extension String {
     var localized: String {
@@ -96,67 +98,164 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         })
 
     }
+    func performLogin(allowCancel:Bool){
+        if self.loginTableViewCell.selectionStyle != UITableViewCellSelectionStyle.none {
+            DispatchQueue.global(qos: .background).async {
+                if self.lblLogin.text == "Login".localized {
+                    DispatchQueue.main.async(execute: {
+                        //self.lblLogin.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
+                        self.lblLogin.text = "Cancel".localized
+                        self.txfPassword.isEnabled = false
+                        self.txfUserName.isEnabled = false
+                        self.switchAutoLogin.isEnabled = false
+                        self.switchRem.isEnabled = false
+                        //self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.none
+                    })
+                    self.clickLogin(hint: true,auto: false);
+                    DispatchQueue.main.async(execute: {
+                        globalsuccess = true;
+                        self.lblLogin.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+                        self.lblLogin.text = "Login".localized
+                        self.txfPassword.isEnabled = true
+                        self.txfUserName.isEnabled = true
+                        self.switchAutoLogin.isEnabled = true
+                        self.switchRem.isEnabled = true
+                        self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.default
+                    })
+                }else if allowCancel == true {
+                    DispatchQueue.main.async(execute: {
+                        self.lblLogin.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
+                        self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.none
+                        self.lblLogin.text = "Canceling".localized
+                        globalsuccess = false;
+                    })
+                }
+            }
+        }
+    }
+    func openFromUrl(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let aVariable = appDelegate.login
+        print("login \(aVariable)")
+        print("wifi \(appDelegate.wifi)")
+        if aVariable{
+            appDelegate.login = false;
+            performLogin(allowCancel: false)
+        }
+        else if appDelegate.wifi {
+            print("OPEN WIFI");
+            appDelegate.wifi = false;
+            print("SET WIFI FALSE");
+            guard let settingsUrl = URL(string: "App-Prefs:root=WIFI") else {
+                return
+                
+            }
+            if UIApplication.shared.canOpenURL(settingsUrl){
+                UIApplication.shared.openURL(settingsUrl)
+            }
+            
+//            if UIApplication.shared.canOpenURL(settingsUrl) {
+//                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+//                    print("Settings opened: \(success)") // Prints true
+//                })
+//            }
+        }else if appDelegate.bus{
+            let webviewController = SVModalWebViewController(address:busurl)
+            //webviewController!.edgesForExtendedLayout = []
+            self.present(webviewController!, animated: true, completion: nil)
+        }
+    }
     
     func isInternetAvailable()
     {
         PlainPing.ping("baidu.com", withTimeout: 3.0,completionBlock: completePing)
     }
 
-    func refresh(refreshControl: UIRefreshControl) {
-        DispatchQueue.main.async(execute: {
-            self.dataTableView.refreshControl?.attributedTitle = NSAttributedString(string: "Authenticating. This may take a while.".localized)
-        })
-        DispatchQueue.global(qos: .background).async {
-            if self.clickLogin(hint: true,auto: true){
-                DispatchQueue.main.async(execute: {
-                    self.dataTableView.refreshControl?.attributedTitle = NSAttributedString(string: "Success. Welcome to the Internet.".localized)
-                })
-                sleep(1);
-            }else{
-                DispatchQueue.main.async(execute: {
-                    self.dataTableView.refreshControl?.attributedTitle = NSAttributedString(string: "Failed. Response is not correct.".localized)
-                })
-                sleep(1);
-            }
-            self.dataTableView.refreshControl?.endRefreshing()
-        }
-        DispatchQueue.main.async(execute: {
-            self.dataTableView.refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh".localized)
-        })
+    
+    func completePingNothing (timeElapsed:Double?, error:Error?){
+    
     }
     override func viewWillAppear(_ animated: Bool) {
-
+        
+//        let fileManger = FileManager.default
+//        var doumentDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+//        let destinationPath = doumentDirectoryPath.appendingPathComponent("ShanghaiTech.mobileconfig")
+//        let sourcePath = Bundle.main.path(forResource: "ShanghaiTech", ofType: "mobileconfig")
+//        do{
+//            let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+//            let url = NSURL(fileURLWithPath: path)
+//            let filePath = url.appendingPathComponent("ShanghaiTech.mobileconfig")?.path
+//            let fileManager = FileManager.default
+//            if fileManager.fileExists(atPath: filePath!) {
+//                print(url)
+//                print("FILE AVAILABLE")
+//            } else {
+//                print("FILE NOT AVAILABLE")
+//                try fileManger.copyItem(atPath: sourcePath!, toPath: destinationPath)
+//            }
+//            
+//        }catch{
+//            print("COPYERROR");
+//        }
+        
+        
         if !UserDefaults.standard.bool(forKey: "UserAlreadyPopedNotification"){
-            let alertController = UIAlertController(title: "Notify".localized, message: "NotifyDetail".localized, preferredStyle: UIAlertControllerStyle.alert)
-            
-            let settingsAction = UIAlertAction(title: "OK".localized, style: .default) { (_) -> Void in
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
-                    (granted, error) in
-                    //Parse errors and track state
-                    if granted {
-                        print("Yay!")
-                    } else {
-                        let alertController = UIAlertController(title: "NotifyCancelled".localized, message: "NotifyCancelledDetail".localized, preferredStyle: UIAlertControllerStyle.alert)
-                        alertController.addAction(UIAlertAction(title: "OK".localized, style: UIAlertActionStyle.default, handler: nil))
-                        self.present(alertController, animated: true, completion: nil)
+
+            if #available(iOS 10.0, *) {
+                let alertController = UIAlertController(title: "Notify".localized, message: "NotifyDetail".localized, preferredStyle: UIAlertControllerStyle.alert)
+                let settingsAction = UIAlertAction(title: "OK".localized, style: .default) { (_) -> Void in
+                    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+                        (granted, error) in
+                        //Parse errors and track state
+                        if granted {
+                            print("Yay!")
+                            PlainPing.ping("www.shanghaitech.edu.cn", withTimeout: 0.01,completionBlock: self.completePingNothing)
+                        } else {
+                            let alertController = UIAlertController(title: "NotifyCancelled".localized, message: "NotifyCancelledDetail".localized, preferredStyle: UIAlertControllerStyle.alert)
+                            let settingsAction = UIAlertAction(title: "OK".localized, style: .default) { (_) -> Void in
+                                PlainPing.ping("www.shanghaitech.edu.cn", withTimeout: 0.01,completionBlock: self.completePingNothing)
+                            }
+                            alertController.addAction(settingsAction)
+                            self.present(alertController, animated: true, completion: nil)
+                        }
+                        UserDefaults.standard.set(true, forKey: "UserAlreadyPopedNotification")
                     }
+                }
+                alertController.addAction(settingsAction)
+                self.present(alertController, animated: true, completion: nil)
+            }else{
+                let alertController = UIAlertController(title: "Notify".localized, message: "NotifyDetail".localized, preferredStyle: UIAlertControllerStyle.alert)
+                let settingsAction = UIAlertAction(title: "OK".localized, style: .default) { (_) -> Void in
+                    let settings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+                    UIApplication.shared.registerUserNotificationSettings(settings)
                     UserDefaults.standard.set(true, forKey: "UserAlreadyPopedNotification")
                 }
+                alertController.addAction(settingsAction)
+                self.present(alertController, animated: true, completion: nil)
             }
-            alertController.addAction(settingsAction)
-            self.present(alertController, animated: true, completion: nil)
-            
 
         }
     }
     
+    func willEnterForeground(notification: NSNotification!) {
+        // do whatever you want when the app is brought back to the foreground
+        //sleep(1);
+        openFromUrl();
+        print("FOREGROUND")
+    }
+    
+    deinit {
+        // make sure to remove the observer when this view controller is dismissed/deallocated
+        
+        NotificationCenter.default.removeObserver(self, name: nil, object: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector:#selector(TableViewController.willEnterForeground(notification:)) , name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
         UIApplication.shared.applicationIconBadgeNumber = 0
         print("shown\n");
-        dataTableView.refreshControl?.attributedTitle = NSAttributedString(string: "Pull to refresh".localized)
-        
-        dataTableView.refreshControl?.addTarget(self, action: #selector(TableViewController.refresh(refreshControl:)), for: UIControlEvents.valueChanged)
+
         
         self.txfUserName.delegate = self
         self.txfPassword.delegate = self
@@ -172,31 +271,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
             }
         }
         if switchAutoLogin.isOn{
-            DispatchQueue.global(qos: .background).async {
-                if self.loginTableViewCell.selectionStyle != UITableViewCellSelectionStyle.none {
-                    DispatchQueue.global(qos: .background).async {
-                        if self.loginTableViewCell.selectionStyle != UITableViewCellSelectionStyle.none {
-                            DispatchQueue.main.async(execute: {
-                                self.lblLogin.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
-                                self.txfPassword.isEnabled = false
-                                self.txfUserName.isEnabled = false
-                                self.switchAutoLogin.isEnabled = false
-                                self.switchRem.isEnabled = false
-                                self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.none
-                            })
-                            self.clickLogin(hint: true,auto: false);
-                            DispatchQueue.main.async(execute: {
-                                self.lblLogin.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
-                                self.txfPassword.isEnabled = true
-                                self.txfUserName.isEnabled = true
-                                self.switchAutoLogin.isEnabled = true
-                                self.switchRem.isEnabled = true
-                                self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.default
-                            })
-                        }
-                    }
-                }
-            }
+            performLogin(allowCancel: false)
         }
         //setMinimumBackgroundFetchInterval(600)
 
@@ -207,7 +282,9 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -286,46 +363,35 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         print("section: \(indexPath.section)")
         print("row: \(indexPath.row)")
         if indexPath.section == 1 && indexPath.row == 0{
-
-            DispatchQueue.global(qos: .background).async {
-                if self.loginTableViewCell.selectionStyle != UITableViewCellSelectionStyle.none {
-                    DispatchQueue.main.async(execute: {
-                        self.lblLogin.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
-                        self.txfPassword.isEnabled = false
-                        self.txfUserName.isEnabled = false
-                        self.switchAutoLogin.isEnabled = false
-                        self.switchRem.isEnabled = false
-                        self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.none
-                    })
-                    self.clickLogin(hint: true,auto: false);
-                    DispatchQueue.main.async(execute: {
-                        self.lblLogin.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
-                        self.txfPassword.isEnabled = true
-                        self.txfUserName.isEnabled = true
-                        self.switchAutoLogin.isEnabled = true
-                        self.switchRem.isEnabled = true
-                        self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.default
-                    })
-                }
-            }
-  
-        }else if indexPath.section == 2 && indexPath.row == 0{
-            sendEmail()
+            performLogin(allowCancel: true)
         }
         if indexPath.section == 2 {
             switch indexPath.row{
-            case 1:
-                guard let settingsUrl = URL(string: "App-Prefs:root=WIFI") else {
-                    return
-                    
+            case 0:
+                if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+                    let webviewController = SVWebViewController(address:"https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/customize/1478262836414/pc/auth.jsp")
+                    webviewController!.edgesForExtendedLayout = []
+                    navigationController?.pushViewController(webviewController!, animated: true)
+                }else{
+                    let webviewController = SVWebViewController(address:"https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/customize/1478262836414/phone/auth.jsp")
+                    webviewController!.edgesForExtendedLayout = []
+                    navigationController?.pushViewController(webviewController!, animated: true)
                 }
-                if UIApplication.shared.canOpenURL(settingsUrl) {
-                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                        print("Settings opened: \(success)") // Prints true
-                    })
-                }
+
+                
+                //UIApplication.shared.openURL(URL(string: "https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/customize/1478262836414/phone/auth.jsp")!)
                 break
+            default:break
+            }
+        }
+        if indexPath.section == 3 {
+            switch indexPath.row{
+            case 1:
+                sendEmail()
             case 2:
+                UIApplication.shared.openURL(URL(string: configUrl)!)
+                break
+            case 0:
                 if self.connectTableViewCell.selectionStyle != UITableViewCellSelectionStyle.none{
                     DispatchQueue.main.async(execute: {
                         self.lblConnectMsg.text = "Checking. Please wait.".localized
@@ -334,12 +400,69 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                     })
                     self.isInternetAvailable()
                 }
-
+                
                 break
-            case 3:
-                UIApplication.shared.openURL(URL(string: "https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/customize/1478262836414/phone/auth.jsp")!)
+
+            default:break
+            }
+        }
+        
+        if indexPath.section == 4 {
+            switch indexPath.row{
+            case 0:
+                guard let settingsUrl = URL(string: "App-Prefs:root=WIFI") else {
+                    return
+                    
+                }
+                if UIApplication.shared.canOpenURL(settingsUrl){
+                    UIApplication.shared.openURL(settingsUrl)
+                }
+//                if UIApplication.shared.canOpenURL(settingsUrl) {
+//                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+//                        print("Settings opened: \(success)") // Prints true
+//                    })
+//                }
+                break
+            case 1:
+                guard let settingsUrl = URL(string: "App-Prefs:root=NOTIFICATIONS_ID") else {
+                    return
+                    
+                }
+                if UIApplication.shared.canOpenURL(settingsUrl){
+                    UIApplication.shared.openURL(settingsUrl)
+                }
+//                if UIApplication.shared.canOpenURL(settingsUrl) {
+//                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+//                        print("Settings opened: \(success)") // Prints true
+//                    })
+//                }
+                break
+            case 2:
+                guard let settingsUrl = URL(string: "App-Prefs:root=General&path=AUTO_CONTENT_DOWNLOAD") else {
+                    return
+                    
+                }
+                if UIApplication.shared.canOpenURL(settingsUrl){
+                    UIApplication.shared.openURL(settingsUrl)
+                }
+//                if UIApplication.shared.canOpenURL(settingsUrl) {
+//                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+//                        print("Settings opened: \(success)") // Prints true
+//                    })
+//                }
                 break
             default:break
+            }
+        }
+        if indexPath.section == 5 {
+            switch indexPath.row{
+            case 0:
+                let webviewController = SVModalWebViewController(address:busurl)
+                //webviewController!.edgesForExtendedLayout = []
+                self.present(webviewController!, animated: true, completion: nil)
+                break
+            default:
+                break
             }
         }
         dataTableView.deselectRow(at: indexPath, animated: true)
@@ -353,8 +476,8 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         for i in 1...count{
             DispatchQueue.main.async(execute: {
                 self.lblMsg.text = String(format:"Authenticating. This may take a while N".localized,"\(i)","\(count)")
-                
             })
+            
             print("pro\(i)")
             let a = ip
             var ansrequest = URLRequest(url: URL(string: "https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!syncPortalAuthResult.action")!)
@@ -385,15 +508,24 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
             if !globalsuccess{
                 globalsuccess = true;
                 DispatchQueue.main.async(execute: {
-                    self.lblMsg.text = String(format:"Fail".localized)
+                    self.lblMsg.text = String(format:"Canceled".localized)
+                    self.lblLogin.text = "Login".localized
+                    self.lblLogin.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+                    self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.default
+                    self.txfPassword.isEnabled = true
+                    self.txfUserName.isEnabled = true
+                    self.switchAutoLogin.isEnabled = true
+                    self.switchRem.isEnabled = true
                 })
+
                 anstask.cancel();
                 return false
             }
-            usleep(2500000);
+            usleep(useconds_t(time));
         }
         
         if success{
+            globalsuccess = true;
             DispatchQueue.main.async(execute: {
                 self.lblMsg.text = "Success. Welcome to the Internet.".localized;
             })
@@ -407,8 +539,26 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                     print("error: \(error)")
                 }
             }
+            
+            if !UserDefaults.standard.bool(forKey: "firstSuccessLogin"){
+                UserDefaults.standard.set(true, forKey: "firstSuccessLogin")
+                let alertController = UIAlertController (title: "Install Profile".localized, message: "whyInstall".localized, preferredStyle: .alert)
+                let settingsAction = UIAlertAction(title: "Install".localized, style: .default) { (_) -> Void in
+                    UIApplication.shared.openURL(URL(string: configUrl)!)
+                }
+                alertController.addAction(settingsAction)
+                let cancelAction = UIAlertAction(title: "Close".localized, style: .default, handler: nil)
+                alertController.addAction(cancelAction)
+                self.present(alertController, animated: true, completion: nil)
+
+            }
+            
+            
+            
+            
             return true;
         }else{
+            globalsuccess = true;
             DispatchQueue.main.async(execute: {
                 self.lblMsg.text = "Failed. Response is not correct.".localized
             })
@@ -428,12 +578,15 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                 return
                 
             }
-            
-            if UIApplication.shared.canOpenURL(settingsUrl) {
-                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                    print("Settings opened: \(success)") // Prints true
-                })
+            if UIApplication.shared.canOpenURL(settingsUrl){
+                UIApplication.shared.openURL(settingsUrl)
             }
+            
+//            if UIApplication.shared.canOpenURL(settingsUrl) {
+//                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+//                    print("Settings opened: \(success)") // Prints true
+//                })
+//            }
         }
         alertController.addAction(settingsAction)
         let cancelAction = UIAlertAction(title: "Close".localized, style: .default, handler: nil)
@@ -494,9 +647,9 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                         }
                     }
                     let responseString = String(data: data, encoding: .utf8)
-                    print("RESPONSE\n")
+                    //print("RESPONSE\n")
                     let a:String = responseString!
-                    print("responseString = \(a)")
+                    //print("responseString = \(a)")
                     // sleep(100);
                     if let dataFromString = a.data(using: .utf8, allowLossyConversion: true) {
                         
@@ -505,9 +658,21 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                             ip = json["data"]["ip"].stringValue
                             //status = json["data"]["accessStatus"].int32!
                             if json["data"]["accessStatus"] != 200{
-                                globalsuccess = false;
+//                                self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.none
+//                                self.lblLogin.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
+                                globalsuccess = false
                                 let alertController = UIAlertController(title: "Message From Server".localized, message: json["message"].stringValue, preferredStyle: UIAlertControllerStyle.alert)
-                                alertController.addAction(UIAlertAction(title: "OK".localized, style: UIAlertActionStyle.default, handler: nil))
+                                let action = UIAlertAction(title: "OK".localized, style: .default) { (_) -> Void in
+                                    if !globalsuccess{
+                                        DispatchQueue.main.async(execute: {
+                                            self.lblLogin.text = "Fail".localized
+                                            self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.none;
+                                            self.lblLogin.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1);
+                                        })
+                                    }
+
+                                }
+                                alertController.addAction(action)
                                 self.present(alertController, animated: true, completion: nil)
                                 
                                 
@@ -545,6 +710,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         return false;
     }
     
+
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let composeVC = MFMailComposeViewController()
@@ -563,7 +729,28 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
             // Present the view controller modally.
             self.present(composeVC, animated: true, completion: nil)
         } else {
-            // show failure alert
+            
+            let alertController = UIAlertController(title: "Email Acoount not Configured".localized, message: "notshownmsg".localized, preferredStyle: UIAlertControllerStyle.alert)
+            
+            let settingsAction = UIAlertAction(title: "Email Settings".localized, style: .default) { (_) -> Void in
+                guard let settingsUrl = URL(string: "App-prefs:root=ACCOUNT_SETTINGS") else {
+                    return
+                    
+                }
+                if UIApplication.shared.canOpenURL(settingsUrl){
+                    UIApplication.shared.openURL(settingsUrl)
+                }
+//                if UIApplication.shared.canOpenURL(settingsUrl) {
+//                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+//                        print("Settings opened: \(success)") // Prints true
+//                    })
+//                }
+            }
+            alertController.addAction(settingsAction)
+            let cancelAction = UIAlertAction(title: "Close".localized, style: .default, handler: nil)
+            alertController.addAction(cancelAction)
+            self.present(alertController, animated: true, completion: nil)
+
         }
     }
     

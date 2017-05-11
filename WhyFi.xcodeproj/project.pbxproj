@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E203B21F1EBF7AE3009C069E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203B21E1EBF7AE3009C069E /* SwiftyJSON.swift */; };
 		E21C94F01EAF029C00DAA633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21C94EF1EAF029C00DAA633 /* AppDelegate.swift */; };
 		E21C94F51EAF029C00DAA633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21C94F31EAF029C00DAA633 /* Main.storyboard */; };
 		E21C94F71EAF029C00DAA633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21C94F61EAF029C00DAA633 /* Assets.xcassets */; };
@@ -18,13 +19,26 @@
 		E2255EE61EB5EE32004EFFCF /* 画板 1@1x-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = E2255EE51EB5EE32004EFFCF /* 画板 1@1x-iPad.png */; };
 		E2255EE81EB5EE79004EFFCF /* 画板 1@2x-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = E2255EE71EB5EE79004EFFCF /* 画板 1@2x-iPad.png */; };
 		E23965651EAF1260005DBC42 /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23965641EAF1260005DBC42 /* network.swift */; };
-		E23A6E9B1EAF3F8000D61C84 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A6E9A1EAF3F8000D61C84 /* SwiftyJSON.swift */; };
 		E23EBCCF1EBA40D80073C77B /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = E23EBCCE1EBA40D80073C77B /* splashscreen.png */; };
+		E277AF671EC0999600A3D338 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277AF661EC0999600A3D338 /* NavigationController.swift */; };
 		E2A015AE1EAF9785007ED748 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A015AD1EAF9785007ED748 /* NotificationCenter.framework */; };
 		E2A015B11EAF9785007ED748 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A015B01EAF9785007ED748 /* TodayViewController.swift */; };
 		E2A015B41EAF9785007ED748 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A015B21EAF9785007ED748 /* MainInterface.storyboard */; };
 		E2A015B81EAF9785007ED748 /* WhyFiHelper.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E2A015AC1EAF9785007ED748 /* WhyFiHelper.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E2A015BE1EAF9E4B007ED748 /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A015BD1EAF9E4B007ED748 /* network.swift */; };
+		E2C785311EC321ED00236B69 /* SVWebViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2C785121EC321ED00236B69 /* SVWebViewController.strings */; };
+		E2C785321EC321ED00236B69 /* SVModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C7851C1EC321ED00236B69 /* SVModalWebViewController.m */; };
+		E2C785331EC321ED00236B69 /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2C7851D1EC321ED00236B69 /* SVWebViewController.bundle */; };
+		E2C785341EC321ED00236B69 /* SVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C7851F1EC321ED00236B69 /* SVWebViewController.m */; };
+		E2C785351EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C785221EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad.png */; };
+		E2C785361EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C785231EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad@2x.png */; };
+		E2C785371EC321ED00236B69 /* SVWebViewControllerActivityChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C785251EC321ED00236B69 /* SVWebViewControllerActivityChrome.m */; };
+		E2C785381EC321ED00236B69 /* SVWebViewControllerActivityChrome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C785261EC321ED00236B69 /* SVWebViewControllerActivityChrome@2x.png */; };
+		E2C785391EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C785281EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad.png */; };
+		E2C7853A1EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C785291EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad@2x.png */; };
+		E2C7853B1EC321ED00236B69 /* SVWebViewControllerActivitySafari.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C7852B1EC321ED00236B69 /* SVWebViewControllerActivitySafari.m */; };
+		E2C7853C1EC321ED00236B69 /* SVWebViewControllerActivitySafari@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C7852C1EC321ED00236B69 /* SVWebViewControllerActivitySafari@2x.png */; };
+		E2C7853D1EC321ED00236B69 /* SVWebViewControllerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C7852E1EC321ED00236B69 /* SVWebViewControllerActivity.m */; };
 		E2E3B7391EBF627100D836AC /* PlainPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3B7371EBF627100D836AC /* PlainPing.swift */; };
 		E2E3B73A1EBF627100D836AC /* SimplePingAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3B7381EBF627100D836AC /* SimplePingAdapter.swift */; };
 		E2E3B73E1EBF62A100D836AC /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E3B73D1EBF62A100D836AC /* SimplePing.m */; };
@@ -84,6 +98,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E203B21E1EBF7AE3009C069E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E208E4B71EBBE96000285501 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		E208E4B91EBBE96200285501 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		E208E4BB1EBBE96600285501 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -109,8 +124,9 @@
 		E2255EE51EB5EE32004EFFCF /* 画板 1@1x-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "画板 1@1x-iPad.png"; sourceTree = "<group>"; };
 		E2255EE71EB5EE79004EFFCF /* 画板 1@2x-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "画板 1@2x-iPad.png"; sourceTree = "<group>"; };
 		E23965641EAF1260005DBC42 /* network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
-		E23A6E9A1EAF3F8000D61C84 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E23EBCCE1EBA40D80073C77B /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
+		E277AF661EC0999600A3D338 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E277AF681EC099DA00A3D338 /* WhyFi-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhyFi-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2A015A51EAF8749007ED748 /* WhyFi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhyFi.entitlements; sourceTree = "<group>"; };
 		E2A015AC1EAF9785007ED748 /* WhyFiHelper.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WhyFiHelper.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A015AD1EAF9785007ED748 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -121,6 +137,33 @@
 		E2A3BD111EB483F400F26FAB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainInterface.strings; sourceTree = "<group>"; };
 		E2A3BD181EB4840600F26FAB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
 		E2A3BD1C1EB4843800F26FAB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		E2C785131EC321ED00236B69 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		E2C785141EC321ED00236B69 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		E2C785151EC321ED00236B69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		E2C785161EC321ED00236B69 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
+		E2C785171EC321ED00236B69 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		E2C785181EC321ED00236B69 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		E2C785191EC321ED00236B69 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		E2C7851A1EC321ED00236B69 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/SVWebViewController.strings; sourceTree = "<group>"; };
+		E2C7851B1EC321ED00236B69 /* SVModalWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVModalWebViewController.h; sourceTree = "<group>"; };
+		E2C7851C1EC321ED00236B69 /* SVModalWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVModalWebViewController.m; sourceTree = "<group>"; };
+		E2C7851D1EC321ED00236B69 /* SVWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVWebViewController.bundle; sourceTree = "<group>"; };
+		E2C7851E1EC321ED00236B69 /* SVWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewController.h; sourceTree = "<group>"; };
+		E2C7851F1EC321ED00236B69 /* SVWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewController.m; sourceTree = "<group>"; };
+		E2C785221EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivityChrome-iPad.png"; sourceTree = "<group>"; };
+		E2C785231EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivityChrome-iPad@2x.png"; sourceTree = "<group>"; };
+		E2C785241EC321ED00236B69 /* SVWebViewControllerActivityChrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewControllerActivityChrome.h; sourceTree = "<group>"; };
+		E2C785251EC321ED00236B69 /* SVWebViewControllerActivityChrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewControllerActivityChrome.m; sourceTree = "<group>"; };
+		E2C785261EC321ED00236B69 /* SVWebViewControllerActivityChrome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivityChrome@2x.png"; sourceTree = "<group>"; };
+		E2C785281EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivitySafari-iPad.png"; sourceTree = "<group>"; };
+		E2C785291EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivitySafari-iPad@2x.png"; sourceTree = "<group>"; };
+		E2C7852A1EC321ED00236B69 /* SVWebViewControllerActivitySafari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewControllerActivitySafari.h; sourceTree = "<group>"; };
+		E2C7852B1EC321ED00236B69 /* SVWebViewControllerActivitySafari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewControllerActivitySafari.m; sourceTree = "<group>"; };
+		E2C7852C1EC321ED00236B69 /* SVWebViewControllerActivitySafari@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SVWebViewControllerActivitySafari@2x.png"; sourceTree = "<group>"; };
+		E2C7852D1EC321ED00236B69 /* SVWebViewControllerActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewControllerActivity.h; sourceTree = "<group>"; };
+		E2C7852E1EC321ED00236B69 /* SVWebViewControllerActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewControllerActivity.m; sourceTree = "<group>"; };
+		E2C7852F1EC321ED00236B69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
+		E2C785301EC321ED00236B69 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
 		E2E3B7371EBF627100D836AC /* PlainPing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainPing.swift; sourceTree = "<group>"; };
 		E2E3B7381EBF627100D836AC /* SimplePingAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePingAdapter.swift; sourceTree = "<group>"; };
 		E2E3B73C1EBF62A100D836AC /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
@@ -162,6 +205,7 @@
 		E21C94E31EAF029C00DAA633 = {
 			isa = PBXGroup;
 			children = (
+				E2C785111EC321ED00236B69 /* SVWebViewController */,
 				E2E3B73B1EBF62A100D836AC /* SimplePing */,
 				E2E3B7361EBF627100D836AC /* PlainPing */,
 				E21C94EE1EAF029C00DAA633 /* WhyFi */,
@@ -185,10 +229,12 @@
 			children = (
 				E2255ED81EB5ED88004EFFCF /* icon */,
 				E2F39B301EB4BB13009D0AC8 /* ShanghaiTech.mobileconfig */,
+				E277AF681EC099DA00A3D338 /* WhyFi-Bridging-Header.h */,
 				E2A015A51EAF8749007ED748 /* WhyFi.entitlements */,
 				E21C94EF1EAF029C00DAA633 /* AppDelegate.swift */,
+				E203B21E1EBF7AE3009C069E /* SwiftyJSON.swift */,
 				E2E3B7541EBF64A000D836AC /* TableViewController.swift */,
-				E23A6E9A1EAF3F8000D61C84 /* SwiftyJSON.swift */,
+				E277AF661EC0999600A3D338 /* NavigationController.swift */,
 				E21C94F31EAF029C00DAA633 /* Main.storyboard */,
 				E21C94F61EAF029C00DAA633 /* Assets.xcassets */,
 				E21C94F81EAF029C00DAA633 /* LaunchScreen.storyboard */,
@@ -233,6 +279,55 @@
 				E2A015BD1EAF9E4B007ED748 /* network.swift */,
 			);
 			path = WhyFiHelper;
+			sourceTree = "<group>";
+		};
+		E2C785111EC321ED00236B69 /* SVWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2C785121EC321ED00236B69 /* SVWebViewController.strings */,
+				E2C7851B1EC321ED00236B69 /* SVModalWebViewController.h */,
+				E2C7851C1EC321ED00236B69 /* SVModalWebViewController.m */,
+				E2C7851D1EC321ED00236B69 /* SVWebViewController.bundle */,
+				E2C7851E1EC321ED00236B69 /* SVWebViewController.h */,
+				E2C7851F1EC321ED00236B69 /* SVWebViewController.m */,
+				E2C785201EC321ED00236B69 /* UIActivities */,
+			);
+			path = SVWebViewController;
+			sourceTree = "<group>";
+		};
+		E2C785201EC321ED00236B69 /* UIActivities */ = {
+			isa = PBXGroup;
+			children = (
+				E2C785211EC321ED00236B69 /* Chrome */,
+				E2C785271EC321ED00236B69 /* Safari */,
+				E2C7852D1EC321ED00236B69 /* SVWebViewControllerActivity.h */,
+				E2C7852E1EC321ED00236B69 /* SVWebViewControllerActivity.m */,
+			);
+			path = UIActivities;
+			sourceTree = "<group>";
+		};
+		E2C785211EC321ED00236B69 /* Chrome */ = {
+			isa = PBXGroup;
+			children = (
+				E2C785221EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad.png */,
+				E2C785231EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad@2x.png */,
+				E2C785241EC321ED00236B69 /* SVWebViewControllerActivityChrome.h */,
+				E2C785251EC321ED00236B69 /* SVWebViewControllerActivityChrome.m */,
+				E2C785261EC321ED00236B69 /* SVWebViewControllerActivityChrome@2x.png */,
+			);
+			path = Chrome;
+			sourceTree = "<group>";
+		};
+		E2C785271EC321ED00236B69 /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+				E2C785281EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad.png */,
+				E2C785291EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad@2x.png */,
+				E2C7852A1EC321ED00236B69 /* SVWebViewControllerActivitySafari.h */,
+				E2C7852B1EC321ED00236B69 /* SVWebViewControllerActivitySafari.m */,
+				E2C7852C1EC321ED00236B69 /* SVWebViewControllerActivitySafari@2x.png */,
+			);
+			path = Safari;
 			sourceTree = "<group>";
 		};
 		E2E3B7361EBF627100D836AC /* PlainPing */ = {
@@ -314,7 +409,7 @@
 								enabled = 1;
 							};
 							com.apple.Keychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -336,6 +431,12 @@
 				"zh-Hant",
 				"zh-Hans",
 				ja,
+				da,
+				de,
+				"es-ES",
+				es,
+				fr,
+				pt,
 			);
 			mainGroup = E21C94E31EAF029C00DAA633;
 			productRefGroup = E21C94ED1EAF029C00DAA633 /* Products */;
@@ -358,9 +459,17 @@
 				E2E3B7641EBF676200D836AC /* Localizable.strings in Resources */,
 				E2255EE41EB5EDEC004EFFCF /* 画板 1@3x.png in Resources */,
 				E2255EE61EB5EE32004EFFCF /* 画板 1@1x-iPad.png in Resources */,
+				E2C785351EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad.png in Resources */,
+				E2C785381EC321ED00236B69 /* SVWebViewControllerActivityChrome@2x.png in Resources */,
+				E2C785311EC321ED00236B69 /* SVWebViewController.strings in Resources */,
 				E2255EDE1EB5ED88004EFFCF /* 画板 1.png in Resources */,
+				E2C785391EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad.png in Resources */,
 				E21C94FA1EAF029C00DAA633 /* LaunchScreen.storyboard in Resources */,
 				E23EBCCF1EBA40D80073C77B /* splashscreen.png in Resources */,
+				E2C785361EC321ED00236B69 /* SVWebViewControllerActivityChrome-iPad@2x.png in Resources */,
+				E2C785331EC321ED00236B69 /* SVWebViewController.bundle in Resources */,
+				E2C7853C1EC321ED00236B69 /* SVWebViewControllerActivitySafari@2x.png in Resources */,
+				E2C7853A1EC321ED00236B69 /* SVWebViewControllerActivitySafari-iPad@2x.png in Resources */,
 				E2255EE81EB5EE79004EFFCF /* 画板 1@2x-iPad.png in Resources */,
 				E21C94F71EAF029C00DAA633 /* Assets.xcassets in Resources */,
 				E21C94F51EAF029C00DAA633 /* Main.storyboard in Resources */,
@@ -383,12 +492,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2E3B7391EBF627100D836AC /* PlainPing.swift in Sources */,
+				E2C785321EC321ED00236B69 /* SVModalWebViewController.m in Sources */,
 				E2E3B7551EBF64A000D836AC /* TableViewController.swift in Sources */,
 				E23965651EAF1260005DBC42 /* network.swift in Sources */,
+				E203B21F1EBF7AE3009C069E /* SwiftyJSON.swift in Sources */,
 				E2E3B73A1EBF627100D836AC /* SimplePingAdapter.swift in Sources */,
+				E2C785341EC321ED00236B69 /* SVWebViewController.m in Sources */,
+				E2C7853D1EC321ED00236B69 /* SVWebViewControllerActivity.m in Sources */,
+				E277AF671EC0999600A3D338 /* NavigationController.swift in Sources */,
+				E2C785371EC321ED00236B69 /* SVWebViewControllerActivityChrome.m in Sources */,
 				E21C94F01EAF029C00DAA633 /* AppDelegate.swift in Sources */,
 				E2E3B73E1EBF62A100D836AC /* SimplePing.m in Sources */,
-				E23A6E9B1EAF3F8000D61C84 /* SwiftyJSON.swift in Sources */,
+				E2C7853B1EC321ED00236B69 /* SVWebViewControllerActivitySafari.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +566,23 @@
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
+		E2C785121EC321ED00236B69 /* SVWebViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2C785131EC321ED00236B69 /* da */,
+				E2C785141EC321ED00236B69 /* de */,
+				E2C785151EC321ED00236B69 /* en */,
+				E2C785161EC321ED00236B69 /* es-ES */,
+				E2C785171EC321ED00236B69 /* es */,
+				E2C785181EC321ED00236B69 /* fr */,
+				E2C785191EC321ED00236B69 /* ja */,
+				E2C7851A1EC321ED00236B69 /* pt */,
+				E2C7852F1EC321ED00236B69 /* zh-Hans */,
+				E2C785301EC321ED00236B69 /* zh-Hant */,
+			);
+			name = SVWebViewController.strings;
+			sourceTree = "<group>";
+		};
 		E2E3B7661EBF676200D836AC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -509,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -556,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -571,7 +703,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WhyFi/WhyFi.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2JVYJA97AU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,10 +712,11 @@
 					"$(PROJECT_DIR)/SwiftyJSON",
 				);
 				INFOPLIST_FILE = WhyFi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/WhyFi/WhyFi-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -595,7 +728,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WhyFi/WhyFi.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2JVYJA97AU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -604,10 +737,11 @@
 					"$(PROJECT_DIR)/SwiftyJSON",
 				);
 				INFOPLIST_FILE = WhyFi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/WhyFi/WhyFi-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,12 +753,14 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2JVYJA97AU;
 				INFOPLIST_FILE = WhyFiHelper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFi.WhyFiHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -633,12 +769,14 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2JVYJA97AU;
 				INFOPLIST_FILE = WhyFiHelper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFi.WhyFiHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};

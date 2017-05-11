@@ -234,6 +234,8 @@ depends-external:
 - "/Users/tom/Developer/WhyFi/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON.h"
 - "/Users/tom/Developer/WhyFi/PlainPing/SimplePing/SimplePing.h"
 - "/Users/tom/Developer/WhyFi/WhyFi/WhyFi-Bridging-Header.h"
+- "/Users/tom/Developer/WhyFi/SVWebViewController/SVWebViewController.h"
+- "/Users/tom/Developer/WhyFi/SVWebViewController/SVModalWebViewController.h"
 - "/Users/tom/Developer/WhyFi/KeychainAccess/KeychainAccess.framework/Headers/KeychainAccess.h"
 - "/Users/tom/Developer/WhyFi/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
 - "/Users/tom/Developer/WhyFi/KeychainAccess/KeychainAccess.framework/Headers/KeychainAccess-Swift.h"

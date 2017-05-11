@@ -5,7 +5,6 @@
 /* Class = "UITableViewSection"; footerTitle = "Enter your identities above.
  Do not remember PIN on public devices."; ObjectID = "8Ep-nZ-T89"; */
 "8Ep-nZ-T89.footerTitle" = "請輸入認證信息
-登錄認證期間，請保持應用位於前台
 若要讓後台通知生效，請勿手動在多任務管理中退出App";
 
 /* Class = "UITableViewSection"; headerTitle = "ShanghaiTech Wi-Fi Network"; ObjectID = "8Ep-nZ-T89"; */
@@ -42,7 +41,8 @@
 "rfL-ac-073.text" = "密碼";
 
 /* Class = "UILabel"; text = "Install Profile"; ObjectID = "tEZ-GC-OR5"; */
-"tEZ-GC-OR5.text" = "安裝描述文件";
+"tEZ-GC-OR5.text" = "安裝描述文件(Mail)";
+"E9N-8D-Tac.text" = "安裝描述文件(Safari)";
 
 /* Class = "UINavigationItem"; title = "Help & Donate"; ObjectID = "x7Z-8c-6Ry"; */
 "x7Z-8c-6Ry.title" = "幫助 & 捐助";
@@ -57,3 +57,10 @@
 "dS9-f0-Urh.placeholder" = "在這裡輸入密碼";
 
 "4TP-y8-08G.text" = "手動登錄";
+
+"3xh-1B-aHg.headerTitle" = "跳轉至設定";
+"t18-5A-8mn.text" = "Wi-Fi";
+"KQP-8L-7Y5.text" = "通知";
+"ts1-bj-AXW.text" = "背景 App 重新整理";
+
+"X3x-T0-QZ6.headerTitle"="實用工具";

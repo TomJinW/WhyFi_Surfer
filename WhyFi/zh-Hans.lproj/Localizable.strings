@@ -10,7 +10,7 @@
 "Wi-Fi Settings" = "Wi-Fi 设置";
 "OK" = "确认";
 "Close" = "关闭";
-"Authenticating. This may take a while." = "认证中...这需要一些时间";
+"Authenticating. This may take a while." = "认证中...请勿离开";
 "Success. Welcome to the Internet." = "太棒了！欢迎来到互联网的世界";
 "Failed. Response is not correct." = "哎呀，响应不正确";
 "Failed. Network is problematic." = "哎呀，网络有问题";
@@ -29,7 +29,7 @@
 "Network is not OK"="互联网连接中断";
 "withCell"= "\n当前正在使用蜂窝移动网络";
 "withWiFi"= "\n当前 Wi-Fi 连接到 %@";
-"Authenticating. This may take a while N" = "认证中...这需要一些时间 %@/%@";
+"Authenticating. This may take a while N" = "认证中...请勿离开 %@/%@";
 
 "Notify"="允许 App 智能地通知你连接到网络";
 "NotifyDetail"="允许应用显示通知后，当接入到指定的 Wi-Fi 网络并且没有互联网的时候，我们会通知你打开应用。\n为了实现该功能，请务必要打开WhyFi的后台应用刷新功能。";
@@ -38,3 +38,16 @@
 "Message From Server"="来自服务器的消息";
 "CheckInternet"="检查互联网连接";
 "Checking. Please wait."="这需要一些时间";
+"Email Acoount not Configured"="邮箱账户未设置";
+"notshownmsg"="需要在手机上设置一个邮箱账户（不一定是学校的）才能使用这个功能。";
+"Email Settings"="邮件设定";
+
+"Login" = "登录";
+"Cancel"= "取消";
+"Canceling"= "取消中";
+"Canceled"= "已取消";
+
+"Install"="安装";
+"Install Profile"="安装描述文件";
+"whyInstall"="恭喜成功连接到网络
+安装描述文件能关闭系统默认的弹出功能，如果已经安装描述文件则无需理会，任何时候都可以通过菜单重新安装。这条消息将不会再显示。";

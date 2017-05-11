@@ -144,11 +144,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
 @class UIApplication;
+@class UIUserNotificationSettings;
 
 SWIFT_CLASS("_TtC5WhyFi11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic) BOOL login;
+@property (nonatomic) BOOL wifi;
 - (void)isInternetAvailable;
+- (void)application:(UIApplication * _Nonnull)application didRegisterUserNotificationSettings:(UIUserNotificationSettings * _Nonnull)notificationSettings;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application performFetchWithCompletionHandler:(void (^ _Nonnull)(UIBackgroundFetchResult))completionHandler;
 - (void)getData;
@@ -164,6 +168,20 @@ SWIFT_CLASS("_TtC5WhyFi11AppDelegate")
 
 @interface NSNumber (SWIFT_EXTENSION(WhyFi))
 @property (nonatomic, readonly) BOOL isBool;
+@end
+
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC5WhyFi20NavigationController")
+@interface NavigationController : UINavigationController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class SimplePing;
@@ -187,10 +205,8 @@ SWIFT_CLASS("_TtC5WhyFi17SimplePingAdapter")
 @class UISwitch;
 @class UILabel;
 @class UITableViewCell;
-@class UIRefreshControl;
+@class NSNotification;
 @class MFMailComposeViewController;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC5WhyFi19TableViewController")
 @interface TableViewController : UITableViewController <MFMailComposeViewControllerDelegate, UITextFieldDelegate>
@@ -204,9 +220,11 @@ SWIFT_CLASS("_TtC5WhyFi19TableViewController")
 @property (nonatomic, weak) IBOutlet UITableViewCell * _Null_unspecified loginTableViewCell;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblConnectMsg;
 @property (nonatomic, weak) IBOutlet UITableViewCell * _Null_unspecified connectTableViewCell;
+- (void)performLoginWithAllowCancel:(BOOL)allowCancel;
+- (void)openFromUrl;
 - (void)isInternetAvailable;
-- (void)refreshWithRefreshControl:(UIRefreshControl * _Nonnull)refreshControl;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)willEnterForegroundWithNotification:(NSNotification * _Null_unspecified)notification;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

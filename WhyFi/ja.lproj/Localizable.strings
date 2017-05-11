@@ -10,10 +10,10 @@
 "Wi-Fi Settings" = "Wi-Fi 設定";
 "OK" = "確認";
 "Close" = "閉じる";
-"Authenticating. This may take a while." = "ログイン中です。お待ちください。";
+"Authenticating. This may take a while." = "ログイン中、出しない。";
 "Success. Welcome to the Internet." = "正常にログインしました。";
-"Failed. Response is not correct." = "ログインに失敗しました。応答を間違。";
-"Failed. Network is problematic." = "ログインに失敗しました。ネットワークの問題があります。";
+"Failed. Response is not correct." = "失敗しました。応答を間違。";
+"Failed. Network is problematic." = "失敗。ネットワークの問題があります。";
 "Please fill in the blanks!" = "またはパスワードを入力してください。";
 "Empty Username or Password" = "空の名前またはパスワード";
 "SSID is not ShanghaiTech.\n You are now connecting %@." = "SSIDがShanghaiTech/ guestありません。\n現在接続されてネットワーク：%@";
@@ -23,13 +23,13 @@
 "noti1"="今ログインすることができます。";
 
 "Pull to refresh"="Pull to refresh";
-"Fail"="失敗しました";
+"Fail"="失敗";
 "Success"="成功";
 "Network is OK"="インターネットに接続されています。";
 "Network is not OK"="インターネットに接続されていません。";
 "withCell"= "\n現在接続されてネットワーク： セルラー";
 "withWiFi"= "\n現在接続されてネットワーク： %@";
-"Authenticating. This may take a while N" = "ログイン中です。お待ちください。 %@/%@";
+"Authenticating. This may take a while N" = "ログイン中です。出しない。 %@/%@";
 
 "Notify"="ログインお知らせ";
 "NotifyDetail"="お知らせを許可すると、ログインすることができるときに、メッセージを受け取ります。";
@@ -38,3 +38,16 @@
 "Message From Server"="サーバーのメッセージ";
 "CheckInternet"="接続を確認する";
 "Checking. Please wait."="お待ちください";
+"Email Acoount not Configured"="メールアカウントが設定されていません";
+"notshownmsg"="このデバイスでメールアカウントを設定する必要があります。";
+"Email Settings"="メールの設定";
+
+"Login" = "ログイン";
+"Cancel"= "キャンセル";
+"Canceling"= "今キャンセルする";
+"Canceled"= "キャンセルされました";
+
+"Install"="インストール";
+"Install Profile"="プロフィールインストール";
+"whyInstall"="インターネット接続をおめでとうございます。
+プロファイルをインストールした後、システムの組み込みの自動ログインが解除されます。既にインストールされて場合は、このメッセージを無視します。いつでもメニューから再インストールすることができます。このメッセージは再表示されません。";

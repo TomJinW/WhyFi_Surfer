@@ -4,7 +4,6 @@
 /* Class = "UITableViewSection"; footerTitle = "Enter your identities above.
  Do not remember PIN on public devices."; ObjectID = "8Ep-nZ-T89"; */
 "8Ep-nZ-T89.footerTitle" = "Enter your identities above.
-Please keep app active during authentication
 To make background notifications to work, do not manually exit App in multitasking view.";
 
 /* Class = "UITableViewSection"; headerTitle = "ShanghaiTech Wi-Fi Network"; ObjectID = "8Ep-nZ-T89"; */
@@ -41,7 +40,8 @@ To make background notifications to work, do not manually exit App in multitaski
 "rfL-ac-073.text" = "PIN";
 
 /* Class = "UILabel"; text = "Install Profile"; ObjectID = "tEZ-GC-OR5"; */
-"tEZ-GC-OR5.text" = "Install Profile";
+"tEZ-GC-OR5.text" = "Install Profile (Mail)";
+"E9N-8D-Tac.text" = "Install Profile (Safari)";
 
 /* Class = "UINavigationItem"; title = "Help & Donate"; ObjectID = "x7Z-8c-6Ry"; */
 "x7Z-8c-6Ry.title" = "Help & Donate";
@@ -56,3 +56,11 @@ To make background notifications to work, do not manually exit App in multitaski
 "dS9-f0-Urh.placeholder" = "Enter Password Here";
 
 "4TP-y8-08G.text" = "Login Manually";
+
+
+"3xh-1B-aHg.headerTitle" = "Go to System Settings";
+"t18-5A-8mn.text" = "Wi-Fi";
+"KQP-8L-7Y5.text" = "Notifications";
+"ts1-bj-AXW.text" = "Background App Refresh";
+
+"X3x-T0-QZ6.headerTitle"="Utilities";
