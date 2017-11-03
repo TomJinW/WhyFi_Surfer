@@ -13,7 +13,7 @@ import SystemConfiguration.CaptiveNetwork
 
 class network : NSObject {
     
-    func getSSID() -> String? {
+    @objc func getSSID() -> String? {
         
         let interfaces = CNCopySupportedInterfaces()
         if interfaces == nil {

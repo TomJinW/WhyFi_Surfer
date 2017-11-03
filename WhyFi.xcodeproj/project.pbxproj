@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E203B21F1EBF7AE3009C069E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203B21E1EBF7AE3009C069E /* SwiftyJSON.swift */; };
+		25F546EA589802F24A30E84C /* Pods_WhyFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A530373C6C52A75BB4D4EDCD /* Pods_WhyFi.framework */; };
+		262E260A54627BC84C3DC6AD /* Pods_WhyFiHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4BDF0212020F678626F433 /* Pods_WhyFiHelper.framework */; };
 		E21C94F01EAF029C00DAA633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21C94EF1EAF029C00DAA633 /* AppDelegate.swift */; };
 		E21C94F51EAF029C00DAA633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21C94F31EAF029C00DAA633 /* Main.storyboard */; };
 		E21C94F71EAF029C00DAA633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21C94F61EAF029C00DAA633 /* Assets.xcassets */; };
@@ -39,14 +40,7 @@
 		E2C7853B1EC321ED00236B69 /* SVWebViewControllerActivitySafari.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C7852B1EC321ED00236B69 /* SVWebViewControllerActivitySafari.m */; };
 		E2C7853C1EC321ED00236B69 /* SVWebViewControllerActivitySafari@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C7852C1EC321ED00236B69 /* SVWebViewControllerActivitySafari@2x.png */; };
 		E2C7853D1EC321ED00236B69 /* SVWebViewControllerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C7852E1EC321ED00236B69 /* SVWebViewControllerActivity.m */; };
-		E2E3B7391EBF627100D836AC /* PlainPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3B7371EBF627100D836AC /* PlainPing.swift */; };
-		E2E3B73A1EBF627100D836AC /* SimplePingAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3B7381EBF627100D836AC /* SimplePingAdapter.swift */; };
-		E2E3B73E1EBF62A100D836AC /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E3B73D1EBF62A100D836AC /* SimplePing.m */; };
 		E2E3B7551EBF64A000D836AC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3B7541EBF64A000D836AC /* TableViewController.swift */; };
-		E2E3B7561EBF65AD00D836AC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E3B7451EBF641800D836AC /* SwiftyJSON.framework */; };
-		E2E3B7571EBF65AD00D836AC /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2E3B7451EBF641800D836AC /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E2E3B7581EBF65AD00D836AC /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E3B7431EBF641200D836AC /* KeychainAccess.framework */; };
-		E2E3B7591EBF65AD00D836AC /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2E3B7431EBF641200D836AC /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2E3B7641EBF676200D836AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2E3B7661EBF676200D836AC /* Localizable.strings */; };
 		E2F39B341EB4BD68009D0AC8 /* ShanghaiTech.mobileconfig in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2F39B301EB4BB13009D0AC8 /* ShanghaiTech.mobileconfig */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -73,18 +67,6 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2E3B7521EBF643600D836AC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E2E3B7591EBF65AD00D836AC /* KeychainAccess.framework in Embed Frameworks */,
-				E2E3B7571EBF65AD00D836AC /* SwiftyJSON.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E2F39B331EB4BD4F009D0AC8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,7 +80,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E203B21E1EBF7AE3009C069E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		37BF10E90AEA24EF4EE75519 /* Pods-WhyFi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhyFi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhyFi/Pods-WhyFi.debug.xcconfig"; sourceTree = "<group>"; };
+		6B36F5883F219D4489F8CFFC /* Pods-WhyFiHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhyFiHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhyFiHelper/Pods-WhyFiHelper.release.xcconfig"; sourceTree = "<group>"; };
+		7D4BDF0212020F678626F433 /* Pods_WhyFiHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhyFiHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A530373C6C52A75BB4D4EDCD /* Pods_WhyFi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhyFi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11F86269A2C8909FF243701 /* Pods-WhyFiHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhyFiHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhyFiHelper/Pods-WhyFiHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		E208E4B71EBBE96000285501 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		E208E4B91EBBE96200285501 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		E208E4BB1EBBE96600285501 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -164,12 +150,6 @@
 		E2C7852E1EC321ED00236B69 /* SVWebViewControllerActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewControllerActivity.m; sourceTree = "<group>"; };
 		E2C7852F1EC321ED00236B69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
 		E2C785301EC321ED00236B69 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SVWebViewController.strings"; sourceTree = "<group>"; };
-		E2E3B7371EBF627100D836AC /* PlainPing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainPing.swift; sourceTree = "<group>"; };
-		E2E3B7381EBF627100D836AC /* SimplePingAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePingAdapter.swift; sourceTree = "<group>"; };
-		E2E3B73C1EBF62A100D836AC /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
-		E2E3B73D1EBF62A100D836AC /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
-		E2E3B7431EBF641200D836AC /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = KeychainAccess/KeychainAccess.framework; sourceTree = "<group>"; };
-		E2E3B7451EBF641800D836AC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = SwiftyJSON/SwiftyJSON.framework; sourceTree = "<group>"; };
 		E2E3B7541EBF64A000D836AC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E2E3B7651EBF676200D836AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E2E3B7671EBF676700D836AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -179,6 +159,7 @@
 		E2E3B76B1EBF677700D836AC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E2F39B2B1EB4870F009D0AC8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainInterface.strings; sourceTree = "<group>"; };
 		E2F39B301EB4BB13009D0AC8 /* ShanghaiTech.mobileconfig */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShanghaiTech.mobileconfig; sourceTree = "<group>"; };
+		F9B072FFDDF4A8C568998405 /* Pods-WhyFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhyFi.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhyFi/Pods-WhyFi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E3B7581EBF65AD00D836AC /* KeychainAccess.framework in Frameworks */,
-				E2E3B7561EBF65AD00D836AC /* SwiftyJSON.framework in Frameworks */,
+				25F546EA589802F24A30E84C /* Pods_WhyFi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,22 +176,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A015AE1EAF9785007ED748 /* NotificationCenter.framework in Frameworks */,
+				262E260A54627BC84C3DC6AD /* Pods_WhyFiHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BB6AE28A42E4EE2F7CDFA75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37BF10E90AEA24EF4EE75519 /* Pods-WhyFi.debug.xcconfig */,
+				F9B072FFDDF4A8C568998405 /* Pods-WhyFi.release.xcconfig */,
+				C11F86269A2C8909FF243701 /* Pods-WhyFiHelper.debug.xcconfig */,
+				6B36F5883F219D4489F8CFFC /* Pods-WhyFiHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E21C94E31EAF029C00DAA633 = {
 			isa = PBXGroup;
 			children = (
 				E2C785111EC321ED00236B69 /* SVWebViewController */,
-				E2E3B73B1EBF62A100D836AC /* SimplePing */,
-				E2E3B7361EBF627100D836AC /* PlainPing */,
 				E21C94EE1EAF029C00DAA633 /* WhyFi */,
 				E2A015AF1EAF9785007ED748 /* WhyFiHelper */,
 				E21C94ED1EAF029C00DAA633 /* Products */,
 				E2A015A11EAF446F007ED748 /* Frameworks */,
+				9BB6AE28A42E4EE2F7CDFA75 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,7 +223,6 @@
 				E277AF681EC099DA00A3D338 /* WhyFi-Bridging-Header.h */,
 				E2A015A51EAF8749007ED748 /* WhyFi.entitlements */,
 				E21C94EF1EAF029C00DAA633 /* AppDelegate.swift */,
-				E203B21E1EBF7AE3009C069E /* SwiftyJSON.swift */,
 				E2E3B7541EBF64A000D836AC /* TableViewController.swift */,
 				E277AF661EC0999600A3D338 /* NavigationController.swift */,
 				E21C94F31EAF029C00DAA633 /* Main.storyboard */,
@@ -263,9 +253,9 @@
 			isa = PBXGroup;
 			children = (
 				E2255E951EB4EF29004EFFCF /* libz.tbd */,
-				E2E3B7451EBF641800D836AC /* SwiftyJSON.framework */,
-				E2E3B7431EBF641200D836AC /* KeychainAccess.framework */,
 				E2A015AD1EAF9785007ED748 /* NotificationCenter.framework */,
+				A530373C6C52A75BB4D4EDCD /* Pods_WhyFi.framework */,
+				7D4BDF0212020F678626F433 /* Pods_WhyFiHelper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -330,25 +320,6 @@
 			path = Safari;
 			sourceTree = "<group>";
 		};
-		E2E3B7361EBF627100D836AC /* PlainPing */ = {
-			isa = PBXGroup;
-			children = (
-				E2E3B7371EBF627100D836AC /* PlainPing.swift */,
-				E2E3B7381EBF627100D836AC /* SimplePingAdapter.swift */,
-			);
-			path = PlainPing;
-			sourceTree = "<group>";
-		};
-		E2E3B73B1EBF62A100D836AC /* SimplePing */ = {
-			isa = PBXGroup;
-			children = (
-				E2E3B73C1EBF62A100D836AC /* SimplePing.h */,
-				E2E3B73D1EBF62A100D836AC /* SimplePing.m */,
-			);
-			name = SimplePing;
-			path = PlainPing/SimplePing;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,12 +327,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E21C94FE1EAF029C00DAA633 /* Build configuration list for PBXNativeTarget "WhyFi" */;
 			buildPhases = (
+				53ACCB930856A1EBD95A21C0 /* [CP] Check Pods Manifest.lock */,
 				E21C94E81EAF029C00DAA633 /* Sources */,
 				E21C94E91EAF029C00DAA633 /* Frameworks */,
 				E21C94EA1EAF029C00DAA633 /* Resources */,
 				E2A015BC1EAF9785007ED748 /* Embed App Extensions */,
 				E2F39B331EB4BD4F009D0AC8 /* CopyFiles */,
-				E2E3B7521EBF643600D836AC /* Embed Frameworks */,
+				DA92A011CCAC47F928159B2B /* [CP] Embed Pods Frameworks */,
+				6277C124AD3F52A69BE6D6B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,9 +350,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2A015B91EAF9785007ED748 /* Build configuration list for PBXNativeTarget "WhyFiHelper" */;
 			buildPhases = (
+				3F67231529B14C2B75C3EE77 /* [CP] Check Pods Manifest.lock */,
 				E2A015A81EAF9785007ED748 /* Sources */,
 				E2A015A91EAF9785007ED748 /* Frameworks */,
 				E2A015AA1EAF9785007ED748 /* Resources */,
+				0037070FB8DCC8ADBB2FEA63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -397,12 +372,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Tom;
 				TargetAttributes = {
 					E21C94EB1EAF029C00DAA633 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 2JVYJA97AU;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -416,6 +392,7 @@
 					E2A015AB1EAF9785007ED748 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 2JVYJA97AU;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -486,23 +463,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0037070FB8DCC8ADBB2FEA63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhyFiHelper/Pods-WhyFiHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F67231529B14C2B75C3EE77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhyFiHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53ACCB930856A1EBD95A21C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhyFi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6277C124AD3F52A69BE6D6B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhyFi/Pods-WhyFi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA92A011CCAC47F928159B2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhyFi/Pods-WhyFi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhyFi/Pods-WhyFi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E21C94E81EAF029C00DAA633 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E3B7391EBF627100D836AC /* PlainPing.swift in Sources */,
 				E2C785321EC321ED00236B69 /* SVModalWebViewController.m in Sources */,
 				E2E3B7551EBF64A000D836AC /* TableViewController.swift in Sources */,
 				E23965651EAF1260005DBC42 /* network.swift in Sources */,
-				E203B21F1EBF7AE3009C069E /* SwiftyJSON.swift in Sources */,
-				E2E3B73A1EBF627100D836AC /* SimplePingAdapter.swift in Sources */,
 				E2C785341EC321ED00236B69 /* SVWebViewController.m in Sources */,
 				E2C7853D1EC321ED00236B69 /* SVWebViewControllerActivity.m in Sources */,
 				E277AF671EC0999600A3D338 /* NavigationController.swift in Sources */,
 				E2C785371EC321ED00236B69 /* SVWebViewControllerActivityChrome.m in Sources */,
 				E21C94F01EAF029C00DAA633 /* AppDelegate.swift in Sources */,
-				E2E3B73E1EBF62A100D836AC /* SimplePing.m in Sources */,
 				E2C7853B1EC321ED00236B69 /* SVWebViewControllerActivitySafari.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,7 +672,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -618,7 +682,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -663,7 +731,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -671,7 +741,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -700,6 +774,7 @@
 		};
 		E21C94FF1EAF029C00DAA633 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37BF10E90AEA24EF4EE75519 /* Pods-WhyFi.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -708,8 +783,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/KeychainAccess",
-					"$(PROJECT_DIR)/SwiftyJSON",
 				);
 				INFOPLIST_FILE = WhyFi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -718,13 +791,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/WhyFi/WhyFi-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		E21C95001EAF029C00DAA633 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B072FFDDF4A8C568998405 /* Pods-WhyFi.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -733,8 +807,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/KeychainAccess",
-					"$(PROJECT_DIR)/SwiftyJSON",
 				);
 				INFOPLIST_FILE = WhyFi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -743,14 +815,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/WhyFi/WhyFi-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		E2A015BA1EAF9785007ED748 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C11F86269A2C8909FF243701 /* Pods-WhyFiHelper.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2JVYJA97AU;
 				INFOPLIST_FILE = WhyFiHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -759,14 +833,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
 		E2A015BB1EAF9785007ED748 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B36F5883F219D4489F8CFFC /* Pods-WhyFiHelper.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2JVYJA97AU;
 				INFOPLIST_FILE = WhyFiHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -775,7 +853,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;

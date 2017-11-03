@@ -11,14 +11,15 @@ import UserNotifications
 
 import Foundation
 import SystemConfiguration
+import PlainPing
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var login = false;
-    var wifi = false;
-    var bus = false;
+    @objc var login = false;
+    @objc var wifi = false;
+    @objc var bus = false;
     func completePing (timeElapsed:Double?, error:Error?){
         if error != nil {
 
@@ -45,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     
-    func isInternetAvailable()
+    @objc func isInternetAvailable()
     {
         PlainPing.ping("baidu.com", withTimeout: 2.0,completionBlock: completePing)
     }
@@ -68,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         getData()
     }
 
-    func getData(){
+    @objc func getData(){
 
         
         

@@ -1,0 +1,6 @@
+framework module Pods_WhyFi {
+  umbrella header "Pods-WhyFi-umbrella.h"
+
+  export *
+  module * { export * }
+}

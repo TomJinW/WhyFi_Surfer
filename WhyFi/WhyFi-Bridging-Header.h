@@ -9,7 +9,6 @@
 #ifndef WhyFi_Bridging_Header_h
 #define WhyFi_Bridging_Header_h
 
-#include "SimplePing.h"
 #import "SVWebViewController.h"
 #import "SVModalWebViewController.h"
 #endif /* WhyFi_Bridging_Header_h */

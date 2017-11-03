@@ -1,0 +1,152 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PlainPing"
+provides-nominal:
+- "C5WhyFi9PlainPing"
+provides-member:
+- ["C5WhyFi9PlainPing", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "*"
+- !private "-"
+- "AssignmentPrecedence"
+- !private "Date"
+- "Double"
+- "Error"
+- "PlainPing"
+- "SimplePingAdapter"
+- "SimplePingAdapterDelegate"
+- "String"
+- "TimeInterval"
+depends-member:
+- !private ["Ps9AnyObject", "Date"]
+- !private ["Ps9AnyObject", "PlainPing"]
+- !private ["Ps9AnyObject", "SimplePingAdapter"]
+- !private ["Ps9AnyObject", "completionBlock"]
+- !private ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "didFailPingWithError"]
+- ["Ps9AnyObject", "didReceivePong"]
+- ["Ps9AnyObject", "didSendPing"]
+- !private ["Ps9AnyObject", "finalizePing"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "pingAdapter"]
+- !private ["Ps9AnyObject", "pingStartTime"]
+- !private ["Ps9AnyObject", "startPing"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "startPing"]
+- !private ["Ps10Comparable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "startPing"]
+- !private ["Ps28CustomDebugStringConvertible", "timeIntervalSinceReferenceDate"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps17CustomReflectable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "startPing"]
+- !private ["Ps23CustomStringConvertible", "timeIntervalSinceReferenceDate"]
+- !private ["V10Foundation4Date", "timeIntervalSinceReferenceDate"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "startPing"]
+- !private ["Ps9Equatable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "startPing"]
+- !private ["Ps8Hashable", "timeIntervalSinceReferenceDate"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "startPing"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "startPing"]
+- !private ["C5WhyFi9PlainPing", "Date"]
+- ["C5WhyFi9PlainPing", "Double"]
+- ["C5WhyFi9PlainPing", "Error"]
+- !private ["C5WhyFi9PlainPing", "PlainPing"]
+- ["C5WhyFi9PlainPing", "PlainPingCompletion"]
+- ["C5WhyFi9PlainPing", "SimplePingAdapter"]
+- ["C5WhyFi9PlainPing", "String"]
+- ["C5WhyFi9PlainPing", "TimeInterval"]
+- !private ["C5WhyFi9PlainPing", "completionBlock"]
+- ["C5WhyFi9PlainPing", "deinit"]
+- ["C5WhyFi9PlainPing", "didFailPingWithError"]
+- ["C5WhyFi9PlainPing", "didReceivePong"]
+- ["C5WhyFi9PlainPing", "didSendPing"]
+- !private ["C5WhyFi9PlainPing", "finalizePing"]
+- ["C5WhyFi9PlainPing", "init"]
+- ["C5WhyFi9PlainPing", "ping"]
+- !private ["C5WhyFi9PlainPing", "pingAdapter"]
+- !private ["C5WhyFi9PlainPing", "pingStartTime"]
+- !private ["P10Foundation20ReferenceConvertible", "timeIntervalSinceReferenceDate"]
+- !private ["C5WhyFi17SimplePingAdapter", "delegate"]
+- !private ["C5WhyFi17SimplePingAdapter", "init"]
+- !private ["C5WhyFi17SimplePingAdapter", "startPing"]
+- !private ["P5WhyFi25SimplePingAdapterDelegate", "Date"]
+- !private ["P5WhyFi25SimplePingAdapterDelegate", "PlainPing"]
+- !private ["P5WhyFi25SimplePingAdapterDelegate", "SimplePingAdapter"]
+- !private ["P5WhyFi25SimplePingAdapterDelegate", "completionBlock"]
+- ["P5WhyFi25SimplePingAdapterDelegate", "didFailPingWithError"]
+- ["P5WhyFi25SimplePingAdapterDelegate", "didReceivePong"]
+- ["P5WhyFi25SimplePingAdapterDelegate", "didSendPing"]
+- !private ["P5WhyFi25SimplePingAdapterDelegate", "finalizePing"]
+- !private ["P5WhyFi25SimplePingAdapterDelegate", "init"]
+- !private ["P5WhyFi25SimplePingAdapterDelegate", "pingAdapter"]
+- !private ["P5WhyFi25SimplePingAdapterDelegate", "pingStartTime"]
+- ["P5WhyFi25SimplePingAdapterDelegate", ""]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "startPing"]
+- !private ["Ps9_Hashable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps21_ObjectiveCBridgeable", "timeIntervalSinceReferenceDate"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "V10Foundation4Date"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- "C5WhyFi9PlainPing"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "C5WhyFi17SimplePingAdapter"
+- "P5WhyFi25SimplePingAdapterDelegate"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MessageUI.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UserNotifications.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Users/tom/Developer/WhyFi/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm64.swiftmodule"
+- "/Users/tom/Developer/WhyFi/KeychainAccess/KeychainAccess.framework/Modules/KeychainAccess.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/tom/Developer/WhyFi/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON.h"
+- "/Users/tom/Developer/WhyFi/KeychainAccess/KeychainAccess.framework/Headers/KeychainAccess.h"
+- "/Users/tom/Developer/WhyFi/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/tom/Developer/WhyFi/KeychainAccess/KeychainAccess.framework/Headers/KeychainAccess-Swift.h"
+- "/Users/tom/Developer/WhyFi/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/tom/Developer/WhyFi/KeychainAccess/KeychainAccess.framework/Modules/module.modulemap"
+interface-hash: "6ee713d644fd49597998fc7f753ef191"

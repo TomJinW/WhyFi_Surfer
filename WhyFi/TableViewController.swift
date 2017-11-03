@@ -13,7 +13,7 @@ import SwiftyJSON
 import MessageUI
 import UserNotifications
 import SystemConfiguration
-
+import PlainPing
 
 
 let count = 10;let time = 3000000;
@@ -22,7 +22,8 @@ let keychain = Keychain(service: "org.ShanghaiTech.WhyFi-token").synchronizable(
 var firstTime = false;
 var globalsuccess = true;
 let busurl = "http://zhouzean.cn/bus1.html"
-let configUrl = "http://shtechnas.cn:8086/ShanghaiTech.mobileconfig"
+let configUrl = "ftp://zhouzean.cn/Writeable/ShanghaiTech.mobileconfig"
+let authURL = "https://controller.shanghaitech.edu.cn:8445/PortalServer/customize/1478262836414/phone/auth.jsp"
 
 extension String {
     var localized: String {
@@ -41,13 +42,13 @@ extension String {
 }
 
 extension UITableViewController {
-    func hideKeyboardWhenTappedAround() {
+    @objc func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UITableViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
     
-    func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
@@ -98,7 +99,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         })
 
     }
-    func performLogin(allowCancel:Bool){
+    @objc func performLogin(allowCancel:Bool){
         if self.loginTableViewCell.selectionStyle != UITableViewCellSelectionStyle.none {
             DispatchQueue.global(qos: .background).async {
                 if self.lblLogin.text == "Login".localized {
@@ -133,7 +134,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
             }
         }
     }
-    func openFromUrl(){
+    @objc func openFromUrl(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let aVariable = appDelegate.login
         print("login \(aVariable)")
@@ -166,7 +167,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         }
     }
     
-    func isInternetAvailable()
+    @objc func isInternetAvailable()
     {
         PlainPing.ping("baidu.com", withTimeout: 3.0,completionBlock: completePing)
     }
@@ -237,7 +238,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         }
     }
     
-    func willEnterForeground(notification: NSNotification!) {
+    @objc func willEnterForeground(notification: NSNotification!) {
         // do whatever you want when the app is brought back to the foreground
         //sleep(1);
         openFromUrl();
@@ -369,11 +370,11 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
             switch indexPath.row{
             case 0:
                 if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
-                    let webviewController = SVWebViewController(address:"https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/customize/1478262836414/pc/auth.jsp")
+                    let webviewController = SVWebViewController(address:authURL)
                     webviewController!.edgesForExtendedLayout = []
                     navigationController?.pushViewController(webviewController!, animated: true)
                 }else{
-                    let webviewController = SVWebViewController(address:"https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/customize/1478262836414/phone/auth.jsp")
+                    let webviewController = SVWebViewController(address:authURL)
                     webviewController!.edgesForExtendedLayout = []
                     navigationController?.pushViewController(webviewController!, animated: true)
                 }
@@ -469,7 +470,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         
     }
     
-    func syncRequest(ip:String)->Bool{
+    @objc func syncRequest(ip:String)->Bool{
         var success = false
 
         // Check request result
@@ -567,7 +568,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         
     }
     
-    func wifiNetworkWrong(type:Int32,name:String!){
+    @objc func wifiNetworkWrong(type:Int32,name:String!){
         let alertController = UIAlertController (title: "wrongWiFi".localized, message: "noWifiConnect".localized, preferredStyle: .alert)
         if type == 2 {
             alertController.title = "wrongWiFi".localized
@@ -597,7 +598,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         
     }
     
-    func clickLogin(hint: Bool,auto:Bool)->Bool{
+    @objc func clickLogin(hint: Bool,auto:Bool)->Bool{
         var ip = ""
         //var status:Int32 = 0;
         var username:String = "";
@@ -711,7 +712,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
     }
     
 
-    func sendEmail() {
+    @objc func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let composeVC = MFMailComposeViewController()
             composeVC.mailComposeDelegate = self

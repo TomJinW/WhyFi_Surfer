@@ -4,8 +4,14 @@
 
 算是心血来潮了吧。很早以前就看到 LWT 女神写的 python 版本的登录器，我就在想这东西能不能移植到手机上。正好赶上学校 Wi-Fi 登录认证换版本之际，现学现做用 Swift 3.0 语言搞出了这么个东西。拼凑起来也能用了。而且我还是尽力把这东西打造的贴心一些。希望大家喜欢。
 
+## 2017.11.4 更新
+- 使用了 CocoaPods 管理那些第三方库，和那些乱七八糟的库管理说再见。
+- 换成了 Swift 4。其实没什么大变化。
+- 适配了 iPhone X 界面。
+- 修改了已经失效的链接。
+
 ## 主要功能
-- 支持所有 iOS 8.0 以上版本的 iPhone，iPad 和 iPod Touch。 【兼容 iPhone 4S 或更新机型、iiPad Air 或更新机型、iiPad mini （第一代）或更新机型、iiPad 2 或更新机型、iPad Pro、iiPod Touch（第五代）或更新机型】
+- 支持所有 iOS 8.0 以上版本的 iPhone，iPad 和 iPod Touch。 【兼容 iPhone 4S 或更新机型、iiPad Air 或更新机型、iPad mini （第一代）或更新机型、iPad 2 或更新机型、iPad Pro、iPod Touch（第五代）或更新机型】
 - 支持标准 iPad 和 12.9寸 iPad Pro 界面。支持 iPad 多任务分屏 Slide Over 和 Split View。 iPad 版支持横屏旋转。
 - 支持从锁屏界面、通知中心、3D Touch 菜单进行快速查看与访问。
 - 与学校登录认证相同的结果反馈。
@@ -24,6 +30,5 @@
 ## 使用的第三方库
 - SwiftyJSON https://github.com/SwiftyJSON/SwiftyJSON
 - KeyChainAccess https://github.com/kishikawakatsumi/KeychainAccess
-- SimplePing https://developer.apple.com/library/content/samplecode/SimplePing/Introduction/Intro.html
 - PlainPing https://github.com/naptics/PlainPing
 - SVWebViewController https://github.com/TransitApp/SVWebViewController

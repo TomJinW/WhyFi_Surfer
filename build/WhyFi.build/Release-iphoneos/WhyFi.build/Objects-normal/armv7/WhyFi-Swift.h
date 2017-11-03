@@ -138,7 +138,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import MessageUI;
 #endif
 
-#import "/Users/tom/Developer/WhyFi/WhyFi/WhyFi-Bridging-Header.h"
+#import "/Users/tom/Developer/WhyFi_Surfer/WhyFi/WhyFi-Bridging-Header.h"
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"

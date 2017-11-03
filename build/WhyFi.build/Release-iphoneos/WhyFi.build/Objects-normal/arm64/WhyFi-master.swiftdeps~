@@ -1,0 +1,11 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "423bde33f30e70d9494d9e2d8dbee074"
+build_time: [547746082, 829728000]
+inputs:
+  "/Users/tom/Developer/WhyFi/PlainPing/PlainPing.swift": [9223372036854775807, 0]
+  "/Users/tom/Developer/WhyFi/WhyFi/TableViewController.swift": [9223372036854775807, 0]
+  "/Users/tom/Developer/WhyFi/WhyFi/network.swift": [9223372036854775807, 0]
+  "/Users/tom/Developer/WhyFi/WhyFi/SwiftyJSON.swift": [9223372036854775807, 0]
+  "/Users/tom/Developer/WhyFi/PlainPing/SimplePingAdapter.swift": [9223372036854775807, 0]
+  "/Users/tom/Developer/WhyFi/WhyFi/NavigationController.swift": [9223372036854775807, 0]
+  "/Users/tom/Developer/WhyFi/WhyFi/AppDelegate.swift": [9223372036854775807, 0]
