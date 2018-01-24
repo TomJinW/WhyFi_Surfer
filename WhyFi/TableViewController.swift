@@ -101,8 +101,11 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
     }
     @objc func performLogin(allowCancel:Bool){
         if self.loginTableViewCell.selectionStyle != UITableViewCellSelectionStyle.none {
+            let tmpText = self.lblLogin.text
+            let textA = txfUserName.text!
+            let textB = txfPassword.text!
             DispatchQueue.global(qos: .background).async {
-                if self.lblLogin.text == "Login".localized {
+                if tmpText == "Login".localized {
                     DispatchQueue.main.async(execute: {
                         //self.lblLogin.textColor = #colorLiteral(red: 0.7233663201, green: 0.7233663201, blue: 0.7233663201, alpha: 1)
                         self.lblLogin.text = "Cancel".localized
@@ -112,7 +115,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                         self.switchRem.isEnabled = false
                         //self.loginTableViewCell.selectionStyle = UITableViewCellSelectionStyle.none
                     })
-                    self.clickLogin(hint: true,auto: false);
+                    self.clickLogin(hint: true,auto: false,textA:textA,textB:textB);
                     DispatchQueue.main.async(execute: {
                         globalsuccess = true;
                         self.lblLogin.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
@@ -481,7 +484,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
             
             print("pro\(i)")
             let a = ip
-            var ansrequest = URLRequest(url: URL(string: "https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!syncPortalAuthResult.action")!)
+            var ansrequest = URLRequest(url: URL(string: "https://controller.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!syncPortalAuthResult.action")!)
             let anspostString = "authLan=zh_CN&hasValidateCode=False&validCode=&hasValidateNextUpdatePassword=true&rememberPwd=false&browserFlag=zh&hasCheckCode=false&checkcode=&saveTime=14&autoLogin=false&userMac=&isBoardPage=false&browserFlag=zh&clientIp=\(a)"
             ansrequest.httpBody = anspostString.data(using: .utf8)
             let anstask = URLSession.shared.dataTask(with: ansrequest) { data, response, error in
@@ -531,14 +534,20 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                 self.lblMsg.text = "Success. Welcome to the Internet.".localized;
             })
             if UserDefaults.standard.bool(forKey: "remember") == true && self.txfUserName != nil{
-                UserDefaults.standard.set(self.txfUserName.text!, forKey: "username")
-                do {
-                    try keychain
-                        .synchronizable(true)
-                        .set(self.txfPassword.text!, key: self.txfUserName.text!)
-                } catch let error {
-                    print("error: \(error)")
+                DispatchQueue.main.async {
+                    UserDefaults.standard.set(self.txfUserName.text!, forKey: "username")
                 }
+                
+                DispatchQueue.main.async {
+                    do {
+                        try keychain
+                            .synchronizable(true)
+                            .set(self.txfPassword.text!, key: self.txfUserName.text!)
+                    } catch let error {
+                        print("error: \(error)")
+                    }
+                }
+
             }
             
             if !UserDefaults.standard.bool(forKey: "firstSuccessLogin"){
@@ -598,7 +607,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         
     }
     
-    @objc func clickLogin(hint: Bool,auto:Bool)->Bool{
+    @objc func clickLogin(hint: Bool,auto:Bool,textA:String,textB:String)->Bool{
         var ip = ""
         //var status:Int32 = 0;
         var username:String = "";
@@ -614,9 +623,9 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                 password = keychain[UserDefaults.standard.string(forKey: "username")!]!
             }
         }else{
-            if  txfUserName.text != nil && txfPassword.text != nil{
-                username = txfUserName.text!
-                password = txfPassword.text!
+            if  textA != nil && textB != nil{
+                username = textA
+                password = textB
             }
         }
         
@@ -631,7 +640,7 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
                     self.lblMsg.text = "Authenticating. This may take a while.".localized
                     
                 })
-                var request = URLRequest(url: URL(string: "https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!login.action")!)
+                var request = URLRequest(url: URL(string: "https://controller.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!login.action")!)
                 //request = URLRequest(url: URL(string: "https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/customize/1478262836414/pc/auth.jsp")!)
                 request.httpMethod = "POST"
                 let postString = "userName=\(username)&password=\(password)&authLan=zh_CN&hasValidateCode=False&validCode=&hasValidateNextUpdatePassword=true&rememberPwd=false&browserFlag=zh&hasCheckCode=false&checkcode=&saveTime=14&autoLogin=false&userMac=&isBoardPage=false"

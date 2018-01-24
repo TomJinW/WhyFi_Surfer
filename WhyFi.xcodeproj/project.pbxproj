@@ -158,7 +158,7 @@
 		E2E3B76A1EBF677500D836AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E2E3B76B1EBF677700D836AC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E2F39B2B1EB4870F009D0AC8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainInterface.strings; sourceTree = "<group>"; };
-		E2F39B301EB4BB13009D0AC8 /* ShanghaiTech.mobileconfig */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShanghaiTech.mobileconfig; sourceTree = "<group>"; };
+		E2F39B301EB4BB13009D0AC8 /* ShanghaiTech.mobileconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ShanghaiTech.mobileconfig; sourceTree = "<group>"; };
 		F9B072FFDDF4A8C568998405 /* Pods-WhyFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhyFi.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhyFi/Pods-WhyFi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -377,7 +377,7 @@
 				TargetAttributes = {
 					E21C94EB1EAF029C00DAA633 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2JVYJA97AU;
+						DevelopmentTeam = PDEFZTG9V2;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -391,7 +391,7 @@
 					};
 					E2A015AB1EAF9785007ED748 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2JVYJA97AU;
+						DevelopmentTeam = PDEFZTG9V2;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -494,7 +494,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		53ACCB930856A1EBD95A21C0 /* [CP] Check Pods Manifest.lock */ = {
@@ -512,7 +512,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6277C124AD3F52A69BE6D6B4 /* [CP] Copy Pods Resources */ = {
@@ -538,11 +538,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhyFi/Pods-WhyFi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/PlainPing/PlainPing.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlainPing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,7 +781,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2JVYJA97AU;
+				DEVELOPMENT_TEAM = PDEFZTG9V2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -787,7 +789,7 @@
 				INFOPLIST_FILE = WhyFi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFi;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/WhyFi/WhyFi-Bridging-Header.h";
@@ -803,7 +805,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2JVYJA97AU;
+				DEVELOPMENT_TEAM = PDEFZTG9V2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -811,7 +813,7 @@
 				INFOPLIST_FILE = WhyFi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFi;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/WhyFi/WhyFi-Bridging-Header.h";
@@ -825,11 +827,11 @@
 			baseConfigurationReference = C11F86269A2C8909FF243701 /* Pods-WhyFiHelper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 2JVYJA97AU;
+				DEVELOPMENT_TEAM = PDEFZTG9V2;
 				INFOPLIST_FILE = WhyFiHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFi.WhyFiHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFit.WhyFiHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -845,11 +847,11 @@
 			baseConfigurationReference = 6B36F5883F219D4489F8CFFC /* Pods-WhyFiHelper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 2JVYJA97AU;
+				DEVELOPMENT_TEAM = PDEFZTG9V2;
 				INFOPLIST_FILE = WhyFiHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFi.WhyFiHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ShanghaiTech.WhyFit.WhyFiHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
