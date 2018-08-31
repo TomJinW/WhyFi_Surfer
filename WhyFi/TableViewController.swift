@@ -64,10 +64,17 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
     @IBOutlet weak var loginTableViewCell: UITableViewCell!
     @IBOutlet weak var lblConnectMsg: UILabel!
     @IBOutlet weak var connectTableViewCell: UITableViewCell!
-
+    @IBOutlet weak var chkSSID: UISwitch!
+    
     func completePing (timeElapsed:Double?, error:Error?){
         if timeElapsed != nil {
-            let wifiName = network().getSSID()
+            let wifiName:String?
+            if (chkSSID.isOn){
+                wifiName = network().getSSID()
+            }else{
+                wifiName = "ShanghaiTech"
+            }
+            
             if wifiName != nil {
                 let alertController = UIAlertController(title: "Success".localized, message: String(format:"Network is OK".localized+"withWiFi".localized,"\(wifiName!)"), preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "OK".localized, style: UIAlertActionStyle.default, handler: nil))
@@ -80,7 +87,12 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         }
         
         if error != nil {
-            let wifiName = network().getSSID()
+            let wifiName:String?
+            if (chkSSID.isOn){
+                wifiName = network().getSSID()
+            }else{
+                wifiName = "ShanghaiTech"
+            }
             if wifiName != nil {
                 let alertController = UIAlertController(title: "Fail".localized, message: String(format:"Network is not OK".localized+"withWiFi".localized,"\(wifiName!)"), preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "OK".localized, style: UIAlertActionStyle.default, handler: nil))
@@ -630,7 +642,12 @@ class TableViewController: UITableViewController,UITextFieldDelegate,MFMailCompo
         }
         
         if username != "" && password != "" {
-            let wifiName = network().getSSID()
+            let wifiName:String?
+            if (chkSSID.isOn){
+                wifiName = network().getSSID()
+            }else{
+                wifiName = "ShanghaiTech"
+            }
             guard wifiName != nil else {
                 wifiNetworkWrong(type: 1,name:wifiName)
                 return false;

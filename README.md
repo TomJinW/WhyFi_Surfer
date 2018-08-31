@@ -4,6 +4,10 @@
 
 算是心血来潮了吧。很早以前就看到 LWT 女神写的 python 版本的登录器，我就在想这东西能不能移植到手机上。正好赶上学校 Wi-Fi 登录认证换版本之际，现学现做用 Swift 3.0 语言搞出了这么个东西。拼凑起来也能用了。而且我还是尽力把这东西打造的贴心一些。希望大家喜欢。
 
+## 2018.8.31 更新
+- 由于用于获取 SSID 信息的 CNCopyCurrentNetworkInfo 函数在 iOS 12 中需要在 App Capability 中打开 Access Wi-Fi Information，目前该 Capability 无法在未付费开发者中启用，所以为了方便，加入了 Check SSID 选项，默认为关，Check SSID 为关时，不会检查当前所连接的 SSID 名称。
+- 使用 iOS 12 SDK 编译。
+
 ## 2018.1.25 更新
 - 更新了 POST 请求（send/sync）的地址。修复了无法登录的错误。
 - 部分 UI 界面修改保证在主线程进行。
